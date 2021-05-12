@@ -181,6 +181,14 @@
       "oAP" : "\/dev\/content\/calendar.html",
       "oF" : 0
     },
+    "\/dev\/content\/donate.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/donate.html",
+      "oF" : 0
+    },
     "\/dev\/content\/hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -189,12 +197,36 @@
       "oAP" : "\/dev\/content\/hero.html",
       "oF" : 0
     },
+    "\/dev\/content\/lecture.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/lecture.html",
+      "oF" : 0
+    },
     "\/dev\/content\/main.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/main.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/plant.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/plant.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/reopen.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/reopen.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
