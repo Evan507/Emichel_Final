@@ -446,6 +446,42 @@ header #Top img {
 /* =============
     Footer
 ============= */
+footer h1 {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  footer h1 {
+    display: none;
+  }
+}
+footer #medsmall {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  footer #medsmall {
+    display: none;
+  }
+}
+footer #largex {
+  display: none;
+}
+@media (min-width: 992px) {
+  footer #largex {
+    display: flex;
+    justify-content: center;
+  }
+}
+footer #socials {
+  display: flex;
+  justify-content: center;
+}
+footer #socials i {
+  padding: 10px;
+}
+
 #hero h1 {
   margin-bottom: 25px;
   margin-top: 25px;
@@ -460,6 +496,7 @@ header #Top img {
   #hero #mainhero {
     height: 285px;
     margin: 50px;
+    margin-right: 200px;
   }
 }
 @media (min-width: 992px) {
@@ -470,6 +507,7 @@ header #Top img {
 @media (min-width: 1200px) {
   #hero #mainhero {
     height: 590px;
+    margin-right: 335px;
   }
 }
 #hero #Read {
@@ -481,5 +519,207 @@ header #Top img {
 @media (min-width: 768px) {
   #hero #Read {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #main {
+    display: grid;
+    grid-template-columns: 75px auto 230px;
+    grid-template-areas: ". main .";
+  }
+}
+@media (min-width: 992px) {
+  #main article {
+    display: flex;
+  }
+}
+#main > div {
+  grid-area: main;
+  margin-bottom: 15px;
+}
+
+#autumn {
+  grid-area: autumn;
+}
+
+#winter {
+  grid-area: winter;
+}
+
+#spring {
+  grid-area: spring;
+}
+
+#summer {
+  grid-area: summer;
+}
+
+img {
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+#slider {
+  display: none;
+}
+@media (min-width: 768px) {
+  #slider {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: flex-end;
+  }
+}
+
+#reopen {
+  background-image: url("../img/info.jpg");
+  background-size: cover;
+  height: 350px;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  #reopen {
+    margin-left: 70px;
+    margin-right: 200px;
+  }
+}
+@media (min-width: 992px) {
+  #reopen {
+    margin-left: 45px;
+    margin-right: 200px;
+    height: 430px;
+  }
+}
+@media (min-width: 1200px) {
+  #reopen {
+    margin-left: 65px;
+    margin-right: 325px;
+    height: 530px;
+  }
+}
+#reopen h2 {
+  display: flex;
+  justify-content: center;
+  align-items: bottom;
+}
+@media (min-width: 768px) {
+  #reopen h2 {
+    justify-content: flex-end;
+  }
+}
+#reopen p {
+  display: none;
+}
+@media (min-width: 768px) {
+  #reopen p {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+}
+
+#donate {
+  padding: 10px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+#donate button {
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  #plant {
+    margin-left: 70px;
+    margin-right: 255px;
+  }
+}
+@media (min-width: 992px) {
+  #plant {
+    margin-left: 217px;
+    margin-right: 335px;
+  }
+}
+@media (min-width: 1200px) {
+  #plant {
+    margin-left: 325px;
+    margin-right: 560px;
+  }
+}
+#plant h2 {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  #plant h2 {
+    display: none;
+  }
+}
+
+#mobilebutton button {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  #mobilebutton {
+    display: none;
+  }
+}
+
+#mainbutton {
+  display: none;
+}
+@media (min-width: 768px) {
+  #mainbutton {
+    display: flex;
+  }
+}
+
+#lecture {
+  margin-bottom: 30px;
+  background-image: url("../img/chairs.jpg");
+  background-size: cover;
+  height: 280px;
+  background-position: bottom center;
+}
+@media (min-width: 768px) {
+  #lecture {
+    height: 330px;
+    margin-left: 65px;
+    margin-right: 205px;
+  }
+}
+@media (min-width: 992px) {
+  #lecture {
+    height: 515px;
+    margin-left: 30px;
+    margin-right: 195px;
+  }
+}
+@media (min-width: 1200px) {
+  #lecture {
+    height: 700px;
+    margin-left: 60px;
+    margin-right: 350px;
+  }
+}
+#lecture p {
+  display: none;
+}
+@media (min-width: 768px) {
+  #lecture p {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+#lecture h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+@media (min-width: 768px) {
+  #lecture h2 {
+    justify-content: flex-end;
   }
 }

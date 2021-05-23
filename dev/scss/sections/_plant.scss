@@ -1,0 +1,51 @@
+#plant{
+
+    @include md{
+        margin-left: 70px;
+        margin-right: 255px;
+    }
+
+
+    @include lg{
+        margin-left: 217px;
+        margin-right: 335px;
+    }
+
+
+    @include xl{
+        margin-left: 325px;
+        margin-right: 560px;
+    }
+
+
+
+    h2{
+        display: flex;
+        justify-content: center;
+        @include md{
+            display: none;
+        }
+    }
+
+}
+
+#mobilebutton{
+  button{
+    display: flex;
+    justify-content: center;
+  }
+
+        @include md{
+            display: none;
+        }
+
+}
+
+#mainbutton{
+    display: none;
+
+    @include md{
+        display: flex;
+    }
+
+}

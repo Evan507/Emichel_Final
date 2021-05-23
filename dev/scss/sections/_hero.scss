@@ -17,15 +17,18 @@
    @include md{
        height: 285px;
        margin: 50px;
+       margin-right: 200px;
    }
 
    @include lg{
     height: 430px;
+   
 
 }
 
 @include xl{
     height: 590px;
+    margin-right: 335px;
   
 }
  }

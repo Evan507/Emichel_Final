@@ -1,3 +1,43 @@
 /* =============
     Footer
 ============= */
+
+footer{
+    h1{
+        display: flex;
+        justify-content: center;
+
+        @include lg{
+            display: none;
+        }
+    }
+
+   #medsmall{
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+
+        @include lg{
+            display: none;
+        }
+
+
+    }
+
+    #largex{
+        display: none;
+
+        @include lg{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    #socials{
+        display: flex;
+        justify-content: center;
+        i{
+            padding: 10px;
+        }
+    }
+}
