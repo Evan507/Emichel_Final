@@ -1,3 +1,40 @@
 /* =============
     Header
 ============= */
+
+header{
+
+#Top{
+    display: flex;
+    // display: grid;
+    // grid-template-columns: 100px auto 100px;
+
+    // align-content: space-between;
+
+  input{
+      margin-top: 35px;
+      height: 35px;
+      margin-left: auto;
+      
+  }
+
+    img{
+        height: 100px;
+    }
+}
+
+
+    }
+
+
+
+        #headlinks{
+         >div{
+            display: flex;
+            
+         } 
+         
+        }
+
+      
+   

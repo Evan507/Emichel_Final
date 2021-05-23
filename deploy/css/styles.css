@@ -427,6 +427,59 @@ textarea {
 /* =============
     Header
 ============= */
+header #Top {
+  display: flex;
+}
+header #Top input {
+  margin-top: 35px;
+  height: 35px;
+  margin-left: auto;
+}
+header #Top img {
+  height: 100px;
+}
+
+#headlinks > div {
+  display: flex;
+}
+
 /* =============
     Footer
 ============= */
+#hero h1 {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+#hero #mainhero {
+  background-image: url("../img/crab.jpg");
+  height: 315px;
+  background-position: center right;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  #hero #mainhero {
+    height: 285px;
+    margin: 50px;
+  }
+}
+@media (min-width: 992px) {
+  #hero #mainhero {
+    height: 430px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #mainhero {
+    height: 590px;
+  }
+}
+#hero #Read {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  #hero #Read {
+    display: none;
+  }
+}
