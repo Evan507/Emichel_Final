@@ -25,6 +25,7 @@ margin-right: 350px;
 
 
 p{
+    color: white;
     display: none;
 
     @include md{
@@ -34,6 +35,7 @@ p{
 }
 
 h2{
+    color: $white;
     display: flex;
     justify-content: center;
     padding-top: 15px;

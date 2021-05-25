@@ -379,6 +379,37 @@ ul li {
   align-items: center;
 }
 
+button {
+  background-color: #21577A;
+  color: white;
+  font-family: Ubuntu, sans-serif;
+  padding: 10px;
+}
+
+p {
+  color: #21577A;
+  font-family: Lato, sans-serif;
+}
+
+h1 {
+  font-family: Ubuntu, sans-serif;
+}
+
+h2 {
+  font-family: Ubuntu, sans-serif;
+}
+
+input {
+  font-family: Lato, sans-serif;
+  color: #21577A;
+  background-color: #D9FBDC;
+}
+
+a {
+  font-family: Ubuntu, sans-serif;
+  color: #21577A;
+}
+
 /* =============
     Typography
 ============= */
@@ -427,18 +458,27 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  color: #21577A;
+  background-color: #9FE6AF;
+}
 header #Top {
+  background-color: #9FE6AF;
   display: flex;
 }
 header #Top input {
   margin-top: 35px;
   height: 35px;
   margin-left: auto;
+  margin-right: 15px;
 }
 header #Top img {
   height: 100px;
 }
 
+#headlinks {
+  background-color: #9FE6AF;
+}
 #headlinks > div {
   display: flex;
 }
@@ -446,6 +486,10 @@ header #Top img {
 /* =============
     Footer
 ============= */
+footer {
+  color: white;
+  background-color: #21577A;
+}
 footer h1 {
   display: flex;
   justify-content: center;
@@ -483,10 +527,15 @@ footer #socials i {
 }
 
 #hero h1 {
+  color: #21577A;
   margin-bottom: 25px;
   margin-top: 25px;
 }
 #hero #mainhero {
+  padding-top: 10px;
+  padding-left: 10px;
+  border-bottom: 2px solid lighter;
+  color: #9FE6AF;
   background-image: url("../img/crab.jpg");
   height: 315px;
   background-position: center right;
@@ -522,6 +571,9 @@ footer #socials i {
   }
 }
 
+#main h2 {
+  color: #21577A;
+}
 @media (min-width: 768px) {
   #main {
     display: grid;
@@ -538,6 +590,13 @@ footer #socials i {
   grid-area: main;
   margin-bottom: 15px;
 }
+#main > div article {
+  margin-bottom: 15px;
+  gap: 15px;
+}
+#main > div article > div {
+  background-color: #9FE6AF;
+}
 
 #autumn {
   grid-area: autumn;
@@ -553,11 +612,6 @@ footer #socials i {
 
 #summer {
   grid-area: summer;
-}
-
-img {
-  margin-bottom: 15px;
-  margin-right: 15px;
 }
 
 #slider {
@@ -599,6 +653,7 @@ img {
   }
 }
 #reopen h2 {
+  color: #21577A;
   display: flex;
   justify-content: center;
   align-items: bottom;
@@ -627,6 +682,7 @@ img {
 }
 #donate button {
   padding: 10px;
+  background-color: #38A3A5;
 }
 
 @media (min-width: 768px) {
@@ -705,6 +761,7 @@ img {
   }
 }
 #lecture p {
+  color: white;
   display: none;
 }
 @media (min-width: 768px) {
@@ -714,6 +771,7 @@ img {
   }
 }
 #lecture h2 {
+  color: #fff;
   display: flex;
   justify-content: center;
   padding-top: 15px;

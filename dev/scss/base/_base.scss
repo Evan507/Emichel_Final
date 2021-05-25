@@ -29,3 +29,34 @@ ul{
     }
 }
 
+
+button{
+    background-color: $lightnavy;
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    padding: 10px;
+}
+
+p{
+    color: $lightnavy;
+    font-family: Lato, sans-serif;
+}
+
+h1{
+  font-family: Ubuntu, sans-serif;
+}
+
+h2{
+    font-family: Ubuntu, sans-serif;
+}
+
+input{
+    font-family: Lato, sans-serif;
+    color: $lightnavy;
+    background-color: $pale;
+}
+
+a{
+    font-family: Ubuntu, sans-serif;
+    color: $lightnavy;
+}

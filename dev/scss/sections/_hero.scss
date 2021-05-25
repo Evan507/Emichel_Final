@@ -1,11 +1,16 @@
 #hero{
 
     h1{
+        color: $lightnavy;
         margin-bottom: 25px;
         margin-top: 25px;
     }
 
  #mainhero{
+     padding-top: 10px;
+     padding-left: 10px;
+     border-bottom: 2px solid lighter;
+     color: $ligher;
     background-image: url("../img/crab.jpg");
     
     height: 315px;

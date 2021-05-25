@@ -4,7 +4,11 @@
 
 header{
 
+    color: $lightnavy;
+    background-color: $ligher;
+
 #Top{
+    background-color: $ligher;
     display: flex;
     // display: grid;
     // grid-template-columns: 100px auto 100px;
@@ -15,6 +19,7 @@ header{
       margin-top: 35px;
       height: 35px;
       margin-left: auto;
+      margin-right: 15px;
       
   }
 
@@ -29,6 +34,7 @@ header{
 
 
         #headlinks{
+            background-color: $ligher;
          >div{
             display: flex;
             
