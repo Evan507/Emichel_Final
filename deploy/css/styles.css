@@ -616,13 +616,16 @@ footer #socials i {
 
 #slider {
   display: none;
+  background-color: #9FE6AF;
 }
 @media (min-width: 768px) {
   #slider {
     display: flex;
     flex-direction: column;
     position: fixed;
-    justify-content: flex-end;
+  }
+  #slider button {
+    margin: 10px;
   }
 }
 

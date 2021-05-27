@@ -13,14 +13,15 @@ header{
     // display: grid;
     // grid-template-columns: 100px auto 100px;
 
-    // align-content: space-between;
+
+
 
   input{
       margin-top: 35px;
       height: 35px;
       margin-left: auto;
       margin-right: 15px;
-      
+        //   align-content: space-between;
   }
 
     img{
@@ -37,8 +38,19 @@ header{
             background-color: $ligher;
          >div{
             display: flex;
+     
+            // a{
+            //     justify-content: space-around;
+             
+            // }
+
+
+         
+                // justify-content: space-around;
             
          } 
+
+     
          
         }
 
