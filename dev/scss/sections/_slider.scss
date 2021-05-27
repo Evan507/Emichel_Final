@@ -1,16 +1,22 @@
-#slider{
+#slider {
     display: none;
     background-color: $ligher;
 
-    @include md{
-        button{
+
+    @include md {
+        button {
             margin: 10px;
 
         }
+
         display: flex;
         flex-direction: column;
-      position: fixed;
-    //  justify-content: flex-end;
+
+        position: fixed;
+        right: 0;
+
+        //  justify-content: flex-end;
+
     }
 
 

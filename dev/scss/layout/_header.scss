@@ -2,57 +2,62 @@
     Header
 ============= */
 
-header{
+header {
 
     color: $lightnavy;
     background-color: $ligher;
 
-#Top{
-    background-color: $ligher;
-    display: flex;
-    // display: grid;
-    // grid-template-columns: 100px auto 100px;
+    #Top {
+        background-color: $ligher;
+        display: flex;
+        // display: grid;
+        // grid-template-columns: 100px auto 100px;
 
 
 
 
-  input{
-      margin-top: 35px;
-      height: 35px;
-      margin-left: auto;
-      margin-right: 15px;
-        //   align-content: space-between;
-  }
-
-    img{
-        height: 100px;
-    }
-}
-
-
-    }
-
-
-
-        #headlinks{
-            background-color: $ligher;
-         >div{
-            display: flex;
-     
-            // a{
-            //     justify-content: space-around;
-             
-            // }
-
-
-         
-                // justify-content: space-around;
-            
-         } 
-
-     
-         
+        input {
+            margin-top: 35px;
+            height: 35px;
+            margin-left: auto;
+            margin-right: 15px;
+            //   align-content: space-between;
         }
 
-      
-   
+        img {
+            height: 100px;
+        }
+    }
+
+
+
+
+
+
+    #headlinks {
+        background-color: $ligher;
+        //  >div{
+
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {}
+        }
+
+        // a{
+        //     justify-content: space-around;
+
+        // }
+
+
+
+        // justify-content: space-around;
+
+        //  } 
+
+
+
+    }
+}

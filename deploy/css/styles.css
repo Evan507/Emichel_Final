@@ -475,14 +475,13 @@ header #Top input {
 header #Top img {
   height: 100px;
 }
-
-#headlinks {
+header #headlinks {
   background-color: #9FE6AF;
 }
-#headlinks > div {
+header #headlinks ul {
   display: flex;
+  justify-content: space-between;
 }
-
 /* =============
     Footer
 ============= */
@@ -623,6 +622,7 @@ footer #socials i {
     display: flex;
     flex-direction: column;
     position: fixed;
+    right: 0;
   }
   #slider button {
     margin: 10px;
@@ -634,6 +634,7 @@ footer #socials i {
   background-size: cover;
   height: 350px;
   background-position: center;
+  position: relative;
 }
 @media (min-width: 768px) {
   #reopen {
@@ -675,6 +676,22 @@ footer #socials i {
     justify-content: flex-end;
     margin-left: auto;
   }
+}
+#reopen #rTop {
+  position: absolute;
+  height: 20px;
+  width: 90%;
+  background-color: #9FE6AF;
+  top: -20px;
+  left: 0;
+}
+#reopen #rLeft {
+  position: absolute;
+  height: 90%;
+  width: 20px;
+  background-color: #9FE6AF;
+  top: -20px;
+  left: -20px;
 }
 
 #donate {

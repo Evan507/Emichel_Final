@@ -1,23 +1,24 @@
-#reopen{
+#reopen {
 
     background-image: url("../img/info.jpg");
     background-size: cover;
     height: 350px;
     background-position: center;
+    position: relative;
 
-    @include md{
+    @include md {
         margin-left: 70px;
         margin-right: 200px;
     }
 
-    @include lg{
+    @include lg {
         margin-left: 45px;
         margin-right: 200px;
         height: 430px;
     }
 
 
-    @include xl{
+    @include xl {
         margin-left: 65px;
         margin-right: 325px;
         height: 530px;
@@ -25,22 +26,22 @@
 
 
 
-h2{
-    color: $lightnavy;
-    display: flex;
-    justify-content: center;
-    align-items: bottom;
+    h2 {
+        color: $lightnavy;
+        display: flex;
+        justify-content: center;
+        align-items: bottom;
 
-    @include md{
-        justify-content: flex-end;
+        @include md {
+            justify-content: flex-end;
+        }
     }
-}
 
 
-    p{
+    p {
         display: none;
 
-        @include md{
+        @include md {
             display: flex;
             justify-content: flex-end;
             margin-left: auto;
@@ -51,4 +52,22 @@ h2{
     //     display: flex;
     //     justify-content: center;
     // }
+
+    #rTop {
+        position: absolute;
+        height: 20px;
+        width: 90%;
+        background-color: $ligher;
+        top:-20px;
+        left:0;
+    }
+
+    #rLeft {
+        position: absolute;
+        height: 90%;
+        width: 20px;
+        background-color: $ligher;
+        top:-20px;
+        left:-20px;
+    }
 }
