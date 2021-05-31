@@ -1,0 +1,51 @@
+#mobile{
+
+    @include md{
+        display: none;
+    }
+
+    #sidecenter{
+    
+        height: 120px;
+        margin-top: 30px;
+        margin-bottom: 120px;
+        padding: 20px;
+        display: flex;
+        background-color: $ligher;
+
+
+        justify-content: space-around;
+        align-content: center;
+        
+
+      button{
+          height: 80px;
+          margin-left: 20px;
+          margin-right: 20px;
+          padding: 40px;
+          font-size: rem-calc(20);
+      }
+        
+
+        i{
+            color: $lightnavy;
+            font-size: 100px;
+        }
+    }
+
+    #MobDon{
+        display: flex;
+        justify-content: center;
+        button{
+            padding: 50px;
+            font-size: rem-calc(40);
+            background-color: $turk;
+        }
+
+   margin-bottom: 120px;
+
+        background-color: $pale;
+        
+        
+    }
+}

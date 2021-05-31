@@ -4,13 +4,19 @@
         color: $lightnavy;
         margin-bottom: 25px;
         margin-top: 25px;
+
+        display: none;
+
+        @include md{
+            display: flex;
+        }
     }
 
  #mainhero{
      padding-top: 10px;
      padding-left: 10px;
      border-bottom: 2px solid lighter;
-     color: $ligher;
+     color: $pale;
     background-image: url("../img/crab.jpg");
     
     height: 315px;
