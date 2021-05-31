@@ -9,24 +9,50 @@ header {
 
     #Top {
         background-color: $ligher;
-        display: flex;
+        // display: flex;
         // display: grid;
         // grid-template-columns: 100px auto 100px;
 
+        #row2{
+          
+                display: flex;
+                #burger{
+                    margin-left: auto;
+                    padding-right: 10px;
+                    justify-content: flex-end;
+                    font-size: rem-calc(50);
+                    @include md{
+                        display: none;
+                     }
+             
+                    
+                }
+            
+        }
+        
 
 
-
-        input {
+        input{
+           @include md{
             margin-top: 35px;
             height: 35px;
             margin-left: auto;
             margin-right: 15px;
+           }
             //   align-content: space-between;
         }
 
         img {
-            height: 100px;
             padding-bottom: 20px;
+            width: 90%;
+            padding-left: 30px;
+
+            @include md{
+                padding-left: 10px;
+                width: auto;
+                height: 100px;
+            }
+
         }
     }
 
@@ -36,13 +62,31 @@ header {
 
 
     #headlinks {
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
         background-color: $ligher;
+
+        
         //  >div{
 
 
         ul {
+            display: none;
+            font-size: rem-calc(20);
+        @include md{
             display: flex;
             justify-content: space-between;
+        }
+        @include lg{
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+
+        @include xl{
+            padding-right: 50px;
+            padding-left: 50px;
+        }
 
             li {}
         }
