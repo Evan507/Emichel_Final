@@ -474,6 +474,7 @@ header #Top input {
 }
 header #Top img {
   height: 100px;
+  padding-bottom: 20px;
 }
 header #headlinks {
   background-color: #9FE6AF;
@@ -652,6 +653,8 @@ footer #socials i {
   height: 350px;
   background-position: center;
   position: relative;
+  display: flex;
+  margin-bottom: 200px;
 }
 @media (min-width: 768px) {
   #reopen {
@@ -674,10 +677,11 @@ footer #socials i {
   }
 }
 #reopen h2 {
+  padding: 10px;
   color: #21577A;
-  display: flex;
   justify-content: center;
   align-items: bottom;
+  margin-bottom: 100px;
 }
 @media (min-width: 768px) {
   #reopen h2 {
@@ -685,6 +689,7 @@ footer #socials i {
   }
 }
 #reopen p {
+  padding: 10px;
   display: none;
 }
 @media (min-width: 768px) {
@@ -692,15 +697,29 @@ footer #socials i {
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
+    text-align: right;
+    width: 270px;
   }
 }
+#reopen button {
+  height: 70px;
+  width: 230px;
+  justify-content: center;
+  margin-top: 400px;
+}
 #reopen #rTop {
-  position: absolute;
-  height: 20px;
-  width: 90%;
-  background-color: #9FE6AF;
-  top: -20px;
-  left: 0;
+  display: none;
+}
+@media (min-width: 768px) {
+  #reopen #rTop {
+    display: inline;
+    position: absolute;
+    height: 20px;
+    width: 90%;
+    background-color: #9FE6AF;
+    top: -20px;
+    left: 0;
+  }
 }
 #reopen #rLeft {
   position: absolute;
@@ -722,22 +741,28 @@ footer #socials i {
   background-color: #38A3A5;
 }
 
+#plant {
+  margin-bottom: 130px;
+}
 @media (min-width: 768px) {
   #plant {
     margin-left: 70px;
     margin-right: 255px;
+    margin-bottom: 120px;
   }
 }
 @media (min-width: 992px) {
   #plant {
     margin-left: 217px;
     margin-right: 335px;
+    margin-bottom: 225px;
   }
 }
 @media (min-width: 1200px) {
   #plant {
     margin-left: 325px;
     margin-right: 560px;
+    margin-bottom: 275px;
   }
 }
 #plant h2 {

@@ -1,20 +1,25 @@
 #plant{
 
+    margin-bottom: 130px;
+
     @include md{
         margin-left: 70px;
         margin-right: 255px;
+        margin-bottom: 120px;
     }
 
 
     @include lg{
         margin-left: 217px;
         margin-right: 335px;
+        margin-bottom: 225px;
     }
 
 
     @include xl{
         margin-left: 325px;
         margin-right: 560px;
+        margin-bottom: 275px;
     }
 
 
