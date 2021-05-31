@@ -572,6 +572,13 @@ footer #socials i {
 
 #main h2 {
   color: #21577A;
+  padding: 10px;
+}
+#main p {
+  padding: 10px;
+}
+#main button {
+  margin: 10px;
 }
 @media (min-width: 768px) {
   #main {
@@ -604,6 +611,11 @@ footer #socials i {
 #winter {
   grid-area: winter;
 }
+@media (min-width: 992px) {
+  #winter {
+    flex-direction: row-reverse;
+  }
+}
 
 #spring {
   grid-area: spring;
@@ -611,6 +623,11 @@ footer #socials i {
 
 #summer {
   grid-area: summer;
+}
+@media (min-width: 992px) {
+  #summer {
+    flex-direction: row-reverse;
+  }
 }
 
 #slider {

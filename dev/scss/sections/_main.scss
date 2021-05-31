@@ -2,8 +2,16 @@
        
  h2{
      color: $lightnavy;
+     padding: 10px;
  } 
 
+ p{
+     padding: 10px;
+ }
+
+ button{
+     margin: 10px;
+ }
     @include md{
         display: grid;
         grid-template-columns: 75px auto 230px;
@@ -15,6 +23,7 @@
     @include lg{
        article{
            display: flex;
+
        
        }
 
@@ -46,6 +55,9 @@
 
 #winter{
     grid-area: winter;
+    @include lg{
+        flex-direction: row-reverse;
+    }
 }
 
 #spring{
@@ -53,6 +65,9 @@
 }
 
 #summer{
-    grid-area:summer
+    grid-area:summer;
+    @include lg{
+        flex-direction: row-reverse;
+    }
 }
 
