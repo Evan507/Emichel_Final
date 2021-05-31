@@ -9,38 +9,31 @@ header {
 
     #Top {
         background-color: $ligher;
-        // display: flex;
+        display: flex;
         // display: grid;
         // grid-template-columns: 100px auto 100px;
 
-        #row2{
-          
-                display: flex;
-                #burger{
-                    margin-left: auto;
-                    padding-right: 10px;
-                    justify-content: flex-end;
-                    font-size: rem-calc(50);
-                    @include md{
-                        display: none;
-                     }
+
+    
+input{
+    display: none;
+            @include md{
+            display: flex;
+             margin-top: 35px;
+             height: 35px;
+             margin-left: auto;
+             margin-right: 15px;
              
-                    
-                }
-            
+            }
+
+           
+}
+
+             //   align-content: space-between;
+         
+     
         }
         
-
-
-        input{
-           @include md{
-            margin-top: 35px;
-            height: 35px;
-            margin-left: auto;
-            margin-right: 15px;
-           }
-            //   align-content: space-between;
-        }
 
         img {
             padding-bottom: 20px;
@@ -56,6 +49,29 @@ header {
         }
     }
 
+    #row2{
+          
+        display: flex;
+        #burger{
+            margin-left: auto;
+            padding-right: 10px;
+            justify-content: flex-end;
+            font-size: rem-calc(50);
+
+            @include md{
+                display: none;
+             }
+      
+        }
+
+        input{
+            margin-left: 10px;
+            @include md{
+                display: none;
+             }
+        }
+    
+}
 
 
 
@@ -105,4 +121,3 @@ header {
 
 
     }
-}

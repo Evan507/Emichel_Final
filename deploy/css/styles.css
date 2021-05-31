@@ -464,65 +464,80 @@ header {
 }
 header #Top {
   background-color: #9FE6AF;
-}
-header #Top #row2 {
   display: flex;
 }
-header #Top #row2 #burger {
-  margin-left: auto;
-  padding-right: 10px;
-  justify-content: flex-end;
-  font-size: 3.125rem;
-}
-@media (min-width: 768px) {
-  header #Top #row2 #burger {
-    display: none;
-  }
+header #Top input {
+  display: none;
 }
 @media (min-width: 768px) {
   header #Top input {
+    display: flex;
     margin-top: 35px;
     height: 35px;
     margin-left: auto;
     margin-right: 15px;
   }
 }
-header #Top img {
+header img {
   padding-bottom: 20px;
   width: 90%;
   padding-left: 30px;
 }
 @media (min-width: 768px) {
-  header #Top img {
+  header img {
     padding-left: 10px;
     width: auto;
     height: 100px;
   }
 }
-header #headlinks {
+
+#row2 {
+  display: flex;
+}
+#row2 #burger {
+  margin-left: auto;
+  padding-right: 10px;
+  justify-content: flex-end;
+  font-size: 3.125rem;
+}
+@media (min-width: 768px) {
+  #row2 #burger {
+    display: none;
+  }
+}
+#row2 input {
+  margin-left: 10px;
+}
+@media (min-width: 768px) {
+  #row2 input {
+    display: none;
+  }
+}
+
+#headlinks {
   padding-bottom: 10px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #9FE6AF;
 }
-header #headlinks ul {
+#headlinks ul {
   display: none;
   font-size: 1.25rem;
 }
 @media (min-width: 768px) {
-  header #headlinks ul {
+  #headlinks ul {
     display: flex;
     justify-content: space-between;
   }
 }
 @media (min-width: 992px) {
-  header #headlinks ul {
+  #headlinks ul {
     padding-right: 40px;
     padding-left: 40px;
   }
 }
 @media (min-width: 1200px) {
-  header #headlinks ul {
+  #headlinks ul {
     padding-right: 50px;
     padding-left: 50px;
   }
