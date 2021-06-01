@@ -1,14 +1,112 @@
 #donate{
-    padding: 10px;
-    margin: 30px;
 
-    display: flex;
-    justify-content: center;
+    display: none;
+    
 
-    button{
-        padding: 10px;
-        background-color: $turk;
+    @include md{
+        display: flex;
+        margin: 30px;
+        margin-top: 130px;
+        margin-bottom: 120px;
     }
 
+    @include lg{
+        margin-top: 225px;
+        margin-bottom: 245px;
+    }
+
+    @include xl{
+        margin-top: 285px;
+        margin-bottom: 275px;
+
+    }
+
+    padding: 10px;
+   
+    display: flex;
+    justify-content: center;
+    font-size: rem-calc(30);
+
+    button{
+        padding: 40px;
+        background-color: $turk;
+        
+        @include lg{
+            padding: 50px 70px;
+        }
+
+        @include xl{
+            padding: 70px 90px;
+        }
+    }
+
+    #dTop{
+        display: none;
+        
+        @include md{
+            display: inline;
+            position: absolute;
+            height: 20px;
+            width: 90%;
+            background-color: $pale;
+            top:-20px;
+            left:0;
+        }
+        
+        @include lg{
+            display: none;
+        }
+    }
     
+    #dLeft{
+        display: none;
+    
+        @include md{
+            display: inline;
+            position: absolute;
+            height: 90%;
+            width: 20px;
+            background-color: $pale;
+            top: -20px;
+            left:-20px;
+        }
+    
+            @include lg{
+                display: none;
+            }
+    }
+
+    #dRight {
+        display: none;
+    
+        @include lg{
+            display: inline;
+            position: absolute;
+            height: 90%;
+            width: 20px;
+            background-color: $pale;
+            top: -20px;
+            right:-20px;
+        }
+
+    }
+
+    #dTop2{
+        display: none;
+        
+        @include lg{
+            display: inline;
+            position: absolute;
+            height: 20px;
+            width: 90%;
+            background-color: $pale;
+            top:-20px;
+            right:0;
+        }
+        
+    }
+
+    #now{
+        position: relative;
+    }
 }

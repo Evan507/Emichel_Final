@@ -55,7 +55,7 @@
             top:-20px;
             right:0;
         }
-        
+
         @include lg{
             display: none;
         }
@@ -109,28 +109,33 @@
         }
     }
 
-}
-
-#mobilebutton{
-    margin-top: 350px;
-
-//  margin-left: 200px;
-display: flex;
-justify-content: center;
-
-        @include md{
-            display: none;
+    #mobilebutton{
+        margin-top: 350px;
+    
+    //  margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    
+            @include md{
+                display: none;
+            }
+    
+    }
+    
+    #mainbutton{
+      display: none;
+      
+        button{
+            // margin-top: 400px;
+         
         }
-
-}
-
-#mainbutton{
-    display: none;
-
-    @include md{
-        display: flex;
+    
+        @include md{
+            display: flex;
+       
+        }
+    
     }
 
-    
-
 }
+

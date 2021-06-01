@@ -851,14 +851,114 @@ footer #socials i {
 }
 
 #donate {
+  display: none;
   padding: 10px;
-  margin: 30px;
   display: flex;
   justify-content: center;
+  font-size: 1.875rem;
+}
+@media (min-width: 768px) {
+  #donate {
+    display: flex;
+    margin: 30px;
+    margin-top: 130px;
+    margin-bottom: 120px;
+  }
+}
+@media (min-width: 992px) {
+  #donate {
+    margin-top: 225px;
+    margin-bottom: 245px;
+  }
+}
+@media (min-width: 1200px) {
+  #donate {
+    margin-top: 285px;
+    margin-bottom: 275px;
+  }
 }
 #donate button {
-  padding: 10px;
+  padding: 40px;
   background-color: #38A3A5;
+}
+@media (min-width: 992px) {
+  #donate button {
+    padding: 50px 70px;
+  }
+}
+@media (min-width: 1200px) {
+  #donate button {
+    padding: 70px 90px;
+  }
+}
+#donate #dTop {
+  display: none;
+}
+@media (min-width: 768px) {
+  #donate #dTop {
+    display: inline;
+    position: absolute;
+    height: 20px;
+    width: 90%;
+    background-color: #D9FBDC;
+    top: -20px;
+    left: 0;
+  }
+}
+@media (min-width: 992px) {
+  #donate #dTop {
+    display: none;
+  }
+}
+#donate #dLeft {
+  display: none;
+}
+@media (min-width: 768px) {
+  #donate #dLeft {
+    display: inline;
+    position: absolute;
+    height: 90%;
+    width: 20px;
+    background-color: #D9FBDC;
+    top: -20px;
+    left: -20px;
+  }
+}
+@media (min-width: 992px) {
+  #donate #dLeft {
+    display: none;
+  }
+}
+#donate #dRight {
+  display: none;
+}
+@media (min-width: 992px) {
+  #donate #dRight {
+    display: inline;
+    position: absolute;
+    height: 90%;
+    width: 20px;
+    background-color: #D9FBDC;
+    top: -20px;
+    right: -20px;
+  }
+}
+#donate #dTop2 {
+  display: none;
+}
+@media (min-width: 992px) {
+  #donate #dTop2 {
+    display: inline;
+    position: absolute;
+    height: 20px;
+    width: 90%;
+    background-color: #D9FBDC;
+    top: -20px;
+    right: 0;
+  }
+}
+#donate #now {
+  position: relative;
 }
 
 #plant {
@@ -968,23 +1068,21 @@ footer #socials i {
     left: -20px;
   }
 }
-
-#mobilebutton {
+#plant #mobilebutton {
   margin-top: 350px;
   display: flex;
   justify-content: center;
 }
 @media (min-width: 768px) {
-  #mobilebutton {
+  #plant #mobilebutton {
     display: none;
   }
 }
-
-#mainbutton {
+#plant #mainbutton {
   display: none;
 }
 @media (min-width: 768px) {
-  #mainbutton {
+  #plant #mainbutton {
     display: flex;
   }
 }
