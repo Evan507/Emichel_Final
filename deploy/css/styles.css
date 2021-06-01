@@ -660,7 +660,7 @@ footer #socials i {
     position: absolute;
     height: 20px;
     width: 90%;
-    background-color: #9FE6AF;
+    background-color: #D9FBDC;
     top: -20px;
     right: 0;
   }
@@ -674,7 +674,7 @@ footer #socials i {
     position: absolute;
     height: 90%;
     width: 20px;
-    background-color: #9FE6AF;
+    background-color: #D9FBDC;
     top: -20px;
     right: -20px;
   }
@@ -862,10 +862,16 @@ footer #socials i {
 }
 
 #plant {
+  position: relative;
+  background-image: url("../img/plants.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
   margin-bottom: 130px;
 }
 @media (min-width: 768px) {
   #plant {
+    height: 390px;
     margin-left: 70px;
     margin-right: 255px;
     margin-bottom: 120px;
@@ -873,6 +879,7 @@ footer #socials i {
 }
 @media (min-width: 992px) {
   #plant {
+    height: 700px;
     margin-left: 217px;
     margin-right: 335px;
     margin-bottom: 225px;
@@ -880,22 +887,90 @@ footer #socials i {
 }
 @media (min-width: 1200px) {
   #plant {
+    height: 830px;
     margin-left: 325px;
     margin-right: 560px;
     margin-bottom: 275px;
   }
 }
 #plant h2 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  color: #21577A;
 }
 @media (min-width: 768px) {
   #plant h2 {
     display: none;
   }
 }
+#plant #pTop {
+  display: none;
+}
+@media (min-width: 768px) {
+  #plant #pTop {
+    display: inline;
+    position: absolute;
+    height: 20px;
+    width: 90%;
+    background-color: #D9FBDC;
+    top: -20px;
+    right: 0;
+  }
+}
+@media (min-width: 992px) {
+  #plant #pTop {
+    display: none;
+  }
+}
+#plant #pRight {
+  display: none;
+}
+@media (min-width: 768px) {
+  #plant #pRight {
+    display: inline;
+    position: absolute;
+    height: 90%;
+    width: 20px;
+    background-color: #D9FBDC;
+    top: -20px;
+    right: -20px;
+  }
+}
+@media (min-width: 992px) {
+  #plant #pRight {
+    display: none;
+  }
+}
+#plant #pTop2 {
+  display: none;
+}
+@media (min-width: 992px) {
+  #plant #pTop2 {
+    display: inline;
+    position: absolute;
+    height: 20px;
+    width: 90%;
+    background-color: #D9FBDC;
+    top: -20px;
+    left: 0;
+  }
+}
+#plant #pLeft {
+  display: none;
+}
+@media (min-width: 992px) {
+  #plant #pLeft {
+    display: inline;
+    position: absolute;
+    height: 90%;
+    width: 20px;
+    background-color: #D9FBDC;
+    top: -20px;
+    left: -20px;
+  }
+}
 
-#mobilebutton button {
+#mobilebutton {
+  margin-top: 350px;
   display: flex;
   justify-content: center;
 }

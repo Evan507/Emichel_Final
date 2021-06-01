@@ -1,8 +1,14 @@
 #plant{
+    position: relative;
+    background-image: url("../img/plants.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
 
     margin-bottom: 130px;
 
     @include md{
+        height: 390px;
         margin-left: 70px;
         margin-right: 255px;
         margin-bottom: 120px;
@@ -10,6 +16,7 @@
 
 
     @include lg{
+        height: 700px;
         margin-left: 217px;
         margin-right: 335px;
         margin-bottom: 225px;
@@ -17,6 +24,7 @@
 
 
     @include xl{
+        height: 830px;
         margin-left: 325px;
         margin-right: 560px;
         margin-bottom: 275px;
@@ -25,20 +33,90 @@
 
 
     h2{
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
+        text-align: center;
+        color: $lightnavy;
         @include md{
             display: none;
+           
+        }
+    }
+
+    #pTop{
+        display: none;
+        
+        @include md{
+            display: inline;
+            position: absolute;
+            height: 20px;
+            width: 90%;
+            background-color: $pale;
+            top:-20px;
+            right:0;
+        }
+        
+        @include lg{
+            display: none;
+        }
+        
+    }
+    
+    #pRight {
+        display: none;
+    
+        @include md{
+            display: inline;
+            position: absolute;
+            height: 90%;
+            width: 20px;
+            background-color: $pale;
+            top: -20px;
+            right:-20px;
+        }
+
+        @include lg{
+            display: none;
+        }
+    }
+
+    #pTop2{
+        display: none;
+        
+        @include lg{
+            display: inline;
+            position: absolute;
+            height: 20px;
+            width: 90%;
+            background-color: $pale;
+            top:-20px;
+            left:0;
+        }
+        
+    }
+    
+    #pLeft{
+        display: none;
+    
+        @include lg{
+            display: inline;
+            position: absolute;
+            height: 90%;
+            width: 20px;
+            background-color: $pale;
+            top: -20px;
+            left:-20px;
         }
     }
 
 }
 
 #mobilebutton{
-  button{
-    display: flex;
-    justify-content: center;
-  }
+    margin-top: 350px;
+
+//  margin-left: 200px;
+display: flex;
+justify-content: center;
 
         @include md{
             display: none;
@@ -52,5 +130,7 @@
     @include md{
         display: flex;
     }
+
+    
 
 }
