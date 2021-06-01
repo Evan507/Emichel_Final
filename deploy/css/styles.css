@@ -399,6 +399,10 @@ h2 {
   font-family: Ubuntu, sans-serif;
 }
 
+h3 {
+  font-family: Ubuntu, sans-serif;
+}
+
 input {
   font-family: Lato, sans-serif;
   color: #21577A;
@@ -590,6 +594,7 @@ footer #socials i {
   margin-bottom: 25px;
   margin-top: 25px;
   display: none;
+  padding-left: 10px;
 }
 @media (min-width: 768px) {
   #hero h1 {
@@ -602,6 +607,7 @@ footer #socials i {
   border-bottom: 2px solid lighter;
   color: #D9FBDC;
   background-image: url("../img/crab.jpg");
+  position: relative;
   height: 315px;
   background-position: center right;
   background-size: cover;
@@ -622,6 +628,55 @@ footer #socials i {
   #hero #mainhero {
     height: 590px;
     margin-right: 335px;
+  }
+}
+#hero #mainhero h3 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #hero #mainhero h3 {
+    display: flex;
+    padding: 10px;
+    padding-bottom: 1px;
+    border-bottom: 2px #D9FBDC solid;
+  }
+}
+#hero #mainhero h2 {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #hero #mainhero h2 {
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: 2px #D9FBDC solid;
+  }
+}
+#hero #mainhero #hTop {
+  display: none;
+}
+@media (min-width: 768px) {
+  #hero #mainhero #hTop {
+    display: inline;
+    position: absolute;
+    height: 20px;
+    width: 90%;
+    background-color: #9FE6AF;
+    top: -20px;
+    right: 0;
+  }
+}
+#hero #mainhero #hRight {
+  display: none;
+}
+@media (min-width: 768px) {
+  #hero #mainhero #hRight {
+    display: inline;
+    position: absolute;
+    height: 90%;
+    width: 20px;
+    background-color: #9FE6AF;
+    top: -20px;
+    right: -20px;
   }
 }
 #hero #Read {

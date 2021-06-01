@@ -10,15 +10,19 @@
         @include md{
             display: flex;
         }
+
+        padding-left: 10px;
     }
 
  #mainhero{
+     
+  
      padding-top: 10px;
      padding-left: 10px;
      border-bottom: 2px solid lighter;
      color: $pale;
     background-image: url("../img/crab.jpg");
-    
+    position: relative;
     height: 315px;
 
     background-position: center right;
@@ -42,6 +46,58 @@
     margin-right: 335px;
   
 }
+
+h3{
+    display: none;
+
+    @include md{
+        display: flex;
+        padding: 10px;
+        padding-bottom: 1px;
+        border-bottom: 2px $pale solid;
+    }
+}
+ h2{
+     text-align: center;
+
+     @include md{
+         text-align: left;
+         padding-left: 10px;
+         border-bottom: 2px $pale solid;
+
+     }
+ }
+
+
+#hTop{
+    display: none;
+    
+    @include md{
+        display: inline;
+        position: absolute;
+        height: 20px;
+        width: 90%;
+        background-color: $ligher;
+        top:-20px;
+        right:0;
+    }
+    
+}
+
+#hRight {
+    display: none;
+
+    @include md{
+        display: inline;
+        position: absolute;
+        height: 90%;
+        width: 20px;
+        background-color: $ligher;
+        top: -20px;
+        right:-20px;
+    }
+}
+
  }
 
  #Read{
@@ -57,4 +113,6 @@
     
    
  }
+
+
 }
