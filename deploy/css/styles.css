@@ -925,7 +925,6 @@ footer #socials i {
   align-content: center;
 }
 #mobile #sidecenter button {
-  height: 80px;
   margin-left: 20px;
   margin-right: 20px;
   padding: 40px;
@@ -934,6 +933,7 @@ footer #socials i {
 #mobile #sidecenter i {
   color: #21577A;
   font-size: 100px;
+  padding-top: 10px;
 }
 #mobile #MobDon {
   display: flex;

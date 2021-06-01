@@ -19,7 +19,7 @@
         
 
       button{
-          height: 80px;
+        //   height: 80px;
           margin-left: 20px;
           margin-right: 20px;
           padding: 40px;
@@ -28,8 +28,11 @@
         
 
         i{
+            // display: flex;
             color: $lightnavy;
             font-size: 100px;
+            // align-content: center;
+            padding-top: 10px;
         }
     }
 
