@@ -54,12 +54,13 @@ h3{
         display: flex;
         padding: 10px;
         padding-bottom: 1px;
-        border-bottom: 2px $pale solid;
+        // border-bottom: 2px $pale solid;
+ 
     }
 }
  h2{
      text-align: center;
-
+    display: inline-block;
      @include md{
          text-align: left;
          padding-left: 10px;

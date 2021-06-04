@@ -1,0 +1,100 @@
+#calendar{
+    display: grid;
+    grid-template-columns: auto 105px 105px auto;
+    grid-template-areas: 
+    ". mon tu ."
+    ". wed thur ."
+    ". fri sat ."
+    ". sun sun .";
+
+    gap: 40px;
+    background-color: $ligher;
+
+    grid-area: calendar;
+
+    margin-bottom: 30px;
+    margin: 20px;
+    margin-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
+    >div{
+        // // display: flex;
+        // flex-direction:column;
+        background-color: $pale;
+        border: solid 2px $lightnavy;
+        height: 105px;
+        width: 105px;
+    }
+
+    h3{
+        padding: 5px;
+        text-align: center;
+            color: white;
+            background-color: $lightnavy;
+            font-size: rem-calc(16);
+    }
+
+    h4{
+        // display: flex;
+        text-align: center;
+        color: $lightnavy;
+        align-items: center;
+        // justify-content: center;
+        // padding-top: 30px;
+    }
+
+    h1{
+        margin-bottom: 30px;
+    }
+
+
+        
+    }
+
+    #mon{
+        grid-area: mon;
+    }
+    #tu{
+        grid-area: tu;
+    }
+    #wed{
+        grid-area: wed;
+    }
+    #thur{
+        grid-area: thur;
+    }
+    #fri{
+        grid-area: fri;
+    }
+    #sat{
+        grid-area: sat;
+        h4{
+         
+            font-size: rem-calc(11);
+        }
+    }
+    #sun{
+        grid-area: sun;
+        h4{
+            font-size: rem-calc(11);
+        }
+    }
+
+#caltitle{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: $lightnavy;
+}
+
+#thisweek{
+
+        color: $lightnavy;
+        margin-left: 20px;
+    
+
+    @include lg{
+        display: none;
+    }
+}

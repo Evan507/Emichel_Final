@@ -384,6 +384,7 @@ button {
   color: white;
   font-family: Ubuntu, sans-serif;
   padding: 10px;
+  border-style: none;
 }
 
 p {
@@ -638,11 +639,11 @@ footer #socials i {
     display: flex;
     padding: 10px;
     padding-bottom: 1px;
-    border-bottom: 2px #D9FBDC solid;
   }
 }
 #hero #mainhero h2 {
   text-align: center;
+  display: inline-block;
 }
 @media (min-width: 768px) {
   #hero #mainhero h2 {
@@ -1173,4 +1174,89 @@ footer #socials i {
   padding: 50px;
   font-size: 2.5rem;
   background-color: #38A3A5;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: auto 105px 105px auto;
+  grid-template-areas: ". mon tu ." ". wed thur ." ". fri sat ." ". sun sun .";
+  gap: 40px;
+  background-color: #9FE6AF;
+  grid-area: calendar;
+  margin-bottom: 30px;
+  margin: 20px;
+  margin-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#calendar > div {
+  background-color: #D9FBDC;
+  border: solid 2px #21577A;
+  height: 105px;
+  width: 105px;
+}
+#calendar h3 {
+  padding: 5px;
+  text-align: center;
+  color: white;
+  background-color: #21577A;
+  font-size: 1rem;
+}
+#calendar h4 {
+  text-align: center;
+  color: #21577A;
+  align-items: center;
+}
+#calendar h1 {
+  margin-bottom: 30px;
+}
+
+#mon {
+  grid-area: mon;
+}
+
+#tu {
+  grid-area: tu;
+}
+
+#wed {
+  grid-area: wed;
+}
+
+#thur {
+  grid-area: thur;
+}
+
+#fri {
+  grid-area: fri;
+}
+
+#sat {
+  grid-area: sat;
+}
+#sat h4 {
+  font-size: 0.6875rem;
+}
+
+#sun {
+  grid-area: sun;
+}
+#sun h4 {
+  font-size: 0.6875rem;
+}
+
+#caltitle {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  color: #21577A;
+}
+
+#thisweek {
+  color: #21577A;
+  margin-left: 20px;
+}
+@media (min-width: 992px) {
+  #thisweek {
+    display: none;
+  }
 }
