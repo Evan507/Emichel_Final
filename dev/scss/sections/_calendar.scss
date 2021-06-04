@@ -1,11 +1,12 @@
 #calendar{
+    position: relative;
     display: grid;
     grid-template-columns: auto 105px 105px auto;
     grid-template-areas: 
     ". mon tu ."
     ". wed thur ."
     ". fri sat ."
-    ". sun sun .";
+    ". sun full .";
 
     gap: 40px;
     background-color: $ligher;
@@ -14,10 +15,16 @@
 
     margin-bottom: 30px;
     margin: 20px;
-    margin-left: 40px;
+    margin-left: 90px;
+    margin-right: 90px;
     padding-top: 20px;
     padding-bottom: 20px;
 
+    @include md{
+        grid-template-columns: auto 150px 150px auto;
+        margin-bottom: 120px;
+        margin-right: 225px;
+    }
 
     >div{
         // // display: flex;
@@ -26,6 +33,13 @@
         border: solid 2px $lightnavy;
         height: 105px;
         width: 105px;
+
+        @include md{
+            height: 150px;
+        width: 150px; 
+        }
+
+        
     }
 
     h3{
@@ -34,6 +48,10 @@
             color: white;
             background-color: $lightnavy;
             font-size: rem-calc(16);
+
+            @include md{
+                font-size: rem-calc(20);
+            }
     }
 
     h4{
@@ -43,15 +61,56 @@
         align-items: center;
         // justify-content: center;
         // padding-top: 30px;
+
+        @include md{
+            font-size: rem-calc(15);
+        }
     }
 
     h1{
         margin-bottom: 30px;
     }
 
+ 
+
 
         
     }
+    // #cTop {
+    //     display: none;
+    //     @include md{
+    //         display: inline;
+    //         position: absolute;
+    //         height: 20px;
+    //         width: 90%;
+    //         background-color: $ligher;
+    //         top:-20px;
+    //         left:0;
+    //     }
+
+    //     @include lg{
+    //         display: none;
+    //     }
+        
+    // }
+
+    // #cLeft {
+    //     display: none;
+    //     @include md{
+    //         display: inline;
+    //         position: absolute;
+    //         height: 90%;
+    //         width: 20px;
+    //         background-color: $ligher;
+    //         top:-20px;
+    //         left:-20px;
+    //     }
+
+    //     @include lg{
+    //         display: none;
+    //     }
+       
+    // }
 
     #mon{
         grid-area: mon;
@@ -81,17 +140,29 @@
             font-size: rem-calc(11);
         }
     }
+    #full{
+        grid-area: full;
+    }
 
 #caltitle{
     margin-bottom: 20px;
     margin-left: 20px;
     color: $lightnavy;
+
+    @include md{
+        margin-left: 90px;
+    }
+
 }
 
 #thisweek{
 
         color: $lightnavy;
         margin-left: 20px;
+
+        @include md{
+            margin-left: 90px;
+        }
     
 
     @include lg{

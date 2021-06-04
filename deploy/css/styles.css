@@ -1177,23 +1177,38 @@ footer #socials i {
 }
 
 #calendar {
+  position: relative;
   display: grid;
   grid-template-columns: auto 105px 105px auto;
-  grid-template-areas: ". mon tu ." ". wed thur ." ". fri sat ." ". sun sun .";
+  grid-template-areas: ". mon tu ." ". wed thur ." ". fri sat ." ". sun full .";
   gap: 40px;
   background-color: #9FE6AF;
   grid-area: calendar;
   margin-bottom: 30px;
   margin: 20px;
-  margin-left: 40px;
+  margin-left: 90px;
+  margin-right: 90px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #calendar {
+    grid-template-columns: auto 150px 150px auto;
+    margin-bottom: 120px;
+    margin-right: 225px;
+  }
 }
 #calendar > div {
   background-color: #D9FBDC;
   border: solid 2px #21577A;
   height: 105px;
   width: 105px;
+}
+@media (min-width: 768px) {
+  #calendar > div {
+    height: 150px;
+    width: 150px;
+  }
 }
 #calendar h3 {
   padding: 5px;
@@ -1202,10 +1217,20 @@ footer #socials i {
   background-color: #21577A;
   font-size: 1rem;
 }
+@media (min-width: 768px) {
+  #calendar h3 {
+    font-size: 1.25rem;
+  }
+}
 #calendar h4 {
   text-align: center;
   color: #21577A;
   align-items: center;
+}
+@media (min-width: 768px) {
+  #calendar h4 {
+    font-size: 0.9375rem;
+  }
 }
 #calendar h1 {
   margin-bottom: 30px;
@@ -1245,15 +1270,29 @@ footer #socials i {
   font-size: 0.6875rem;
 }
 
+#full {
+  grid-area: full;
+}
+
 #caltitle {
   margin-bottom: 20px;
   margin-left: 20px;
   color: #21577A;
 }
+@media (min-width: 768px) {
+  #caltitle {
+    margin-left: 90px;
+  }
+}
 
 #thisweek {
   color: #21577A;
   margin-left: 20px;
+}
+@media (min-width: 768px) {
+  #thisweek {
+    margin-left: 90px;
+  }
 }
 @media (min-width: 992px) {
   #thisweek {
