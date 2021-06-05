@@ -71,46 +71,48 @@
         margin-bottom: 30px;
     }
 
- 
+    #cTop {
+        display: none;
+        @include md{
+            display: inline;
+            position: absolute;
+            height: 20px;
+            width: 90%;
+            background-color: $pale;
+            border: none;
+            top:-20px;
+            left:0;
+        }
+
+        @include lg{
+            display: none;
+        }
+        
+    }
+
+    #cLeft {
+        display: none;
+        @include md{
+            display: inline;
+            position: absolute;
+            height: 90%;
+            width: 20px;
+            background-color: $pale;
+            border: none;
+            top:-20px;
+            left:-20px;
+        }
+
+        @include lg{
+            display: none;
+        }
+       
+    }
 
 
         
     }
-    // #cTop {
-    //     display: none;
-    //     @include md{
-    //         display: inline;
-    //         position: absolute;
-    //         height: 20px;
-    //         width: 90%;
-    //         background-color: $ligher;
-    //         top:-20px;
-    //         left:0;
-    //     }
-
-    //     @include lg{
-    //         display: none;
-    //     }
-        
-    // }
-
-    // #cLeft {
-    //     display: none;
-    //     @include md{
-    //         display: inline;
-    //         position: absolute;
-    //         height: 90%;
-    //         width: 20px;
-    //         background-color: $ligher;
-    //         top:-20px;
-    //         left:-20px;
-    //     }
-
-    //     @include lg{
-    //         display: none;
-    //     }
-       
-    // }
+   
 
     #mon{
         grid-area: mon;
