@@ -8,7 +8,7 @@
     "fri sat"
     "sun full";
 
-    gap: 40px;
+    gap: 30px;
     background-color: $ligher;
 
     grid-area: calendar;
@@ -19,8 +19,8 @@
     margin-right: auto;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 55px;
-    padding-right: 30px;
+    padding-left: 45px;
+    padding-right: 20px;
     width: 280px;
 
     @include md{
@@ -117,7 +117,9 @@
        
     }
 
-
+@include lg{
+    display: none;
+}
         
     }
    
@@ -178,4 +180,125 @@
     @include lg{
         display: none;
     }
+}
+
+
+#lgcalendar{
+    margin-bottom: 50px;
+    display: none;
+    background-color: $ligher;
+    width: 790px;
+    padding: 20px;
+    margin-left: 25px;
+    margin-right: 195px;
+    color: $lightnavy;
+
+    @include lg{
+        display: grid;
+        // display: flex;
+        // flex-direction: row;
+    }
+
+    #week1{
+        >div{
+           
+            margin-bottom: 20px;
+            background-color: $pale;
+            border: solid 2px $lightnavy;
+            height: 90px;
+            width: 90px;
+    
+         
+    
+            
+        }
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    #week2{
+        >div{
+            margin-bottom: 20px;
+            // flex-direction:column;
+            background-color: $pale;
+            border: solid 2px $lightnavy;
+            height: 90px;
+            width: 90px;
+    
+            
+           
+       
+        }
+
+        display: flex; 
+        justify-content: space-around;
+    }
+
+
+    #week3{
+        >div{
+ 
+            margin-bottom: 20px;
+            background-color: $pale;
+            border: solid 2px $lightnavy;
+            height: 90px;
+            width: 90px;
+    
+           
+    
+            
+   
+        }
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    #week4{
+        >div{
+        
+            // flex-direction:column;
+            background-color: $pale;
+            border: solid 2px $lightnavy;
+            height: 90px;
+            width: 90px;
+    
+            
+       
+        }
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+    h3{
+        font-size: rem-calc(16);
+        text-align: center;
+        color: white;
+        background-color: $lightnavy;
+    }
+    h4{
+        font-size: rem-calc(16);
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #sat{
+        h4{
+            font-size: rem-calc(11);
+            margin-top: 5px;
+        }
+    }
+
+    #sun{
+        h4{
+            font-size: rem-calc(11);
+            margin-top: 5px;
+        }
+    }
+
+
 }

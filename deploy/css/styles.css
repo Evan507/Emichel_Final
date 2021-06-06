@@ -1181,7 +1181,7 @@ footer #socials i {
   display: grid;
   grid-template-columns: 105px 105px;
   grid-template-areas: "mon tu " "wed thur" "fri sat" "sun full";
-  gap: 40px;
+  gap: 30px;
   background-color: #9FE6AF;
   grid-area: calendar;
   margin-bottom: 30px;
@@ -1190,8 +1190,8 @@ footer #socials i {
   margin-right: auto;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 55px;
-  padding-right: 30px;
+  padding-left: 45px;
+  padding-right: 20px;
   width: 280px;
 }
 @media (min-width: 768px) {
@@ -1283,6 +1283,11 @@ footer #socials i {
     display: none;
   }
 }
+@media (min-width: 992px) {
+  #calendar {
+    display: none;
+  }
+}
 
 #mon {
   grid-area: mon;
@@ -1346,4 +1351,82 @@ footer #socials i {
   #thisweek {
     display: none;
   }
+}
+
+#lgcalendar {
+  margin-bottom: 50px;
+  display: none;
+  background-color: #9FE6AF;
+  width: 790px;
+  padding: 20px;
+  margin-left: 25px;
+  margin-right: 195px;
+  color: #21577A;
+}
+@media (min-width: 992px) {
+  #lgcalendar {
+    display: grid;
+  }
+}
+#lgcalendar #week1 {
+  display: flex;
+  justify-content: space-around;
+}
+#lgcalendar #week1 > div {
+  margin-bottom: 20px;
+  background-color: #D9FBDC;
+  border: solid 2px #21577A;
+  height: 90px;
+  width: 90px;
+}
+#lgcalendar #week2 {
+  display: flex;
+  justify-content: space-around;
+}
+#lgcalendar #week2 > div {
+  margin-bottom: 20px;
+  background-color: #D9FBDC;
+  border: solid 2px #21577A;
+  height: 90px;
+  width: 90px;
+}
+#lgcalendar #week3 {
+  display: flex;
+  justify-content: space-around;
+}
+#lgcalendar #week3 > div {
+  margin-bottom: 20px;
+  background-color: #D9FBDC;
+  border: solid 2px #21577A;
+  height: 90px;
+  width: 90px;
+}
+#lgcalendar #week4 {
+  display: flex;
+  justify-content: space-around;
+}
+#lgcalendar #week4 > div {
+  background-color: #D9FBDC;
+  border: solid 2px #21577A;
+  height: 90px;
+  width: 90px;
+}
+#lgcalendar h3 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  background-color: #21577A;
+}
+#lgcalendar h4 {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10px;
+}
+#lgcalendar #sat h4 {
+  font-size: 0.6875rem;
+  margin-top: 5px;
+}
+#lgcalendar #sun h4 {
+  font-size: 0.6875rem;
+  margin-top: 5px;
 }
