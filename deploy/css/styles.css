@@ -1337,6 +1337,12 @@ footer #socials i {
     margin-left: 90px;
   }
 }
+@media (min-width: 992px) {
+  #caltitle {
+    margin-left: 25px;
+    margin-bottom: 5px;
+  }
+}
 
 #thisweek {
   color: #21577A;
@@ -1354,11 +1360,14 @@ footer #socials i {
 }
 
 #lgcalendar {
-  margin-bottom: 50px;
+  position: relative;
+  margin-bottom: 225px;
   display: none;
   background-color: #9FE6AF;
   width: 790px;
   padding: 20px;
+  padding-bottom: 40px;
+  padding-top: 40px;
   margin-left: 25px;
   margin-right: 195px;
   color: #21577A;
@@ -1368,12 +1377,18 @@ footer #socials i {
     display: grid;
   }
 }
+@media (min-width: 1200px) {
+  #lgcalendar {
+    width: 1040px;
+    margin-left: 75px;
+  }
+}
 #lgcalendar #week1 {
   display: flex;
   justify-content: space-around;
 }
 #lgcalendar #week1 > div {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   background-color: #D9FBDC;
   border: solid 2px #21577A;
   height: 90px;
@@ -1384,7 +1399,7 @@ footer #socials i {
   justify-content: space-around;
 }
 #lgcalendar #week2 > div {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   background-color: #D9FBDC;
   border: solid 2px #21577A;
   height: 90px;
@@ -1395,7 +1410,7 @@ footer #socials i {
   justify-content: space-around;
 }
 #lgcalendar #week3 > div {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   background-color: #D9FBDC;
   border: solid 2px #21577A;
   height: 90px;
@@ -1429,4 +1444,35 @@ footer #socials i {
 #lgcalendar #sun h4 {
   font-size: 0.6875rem;
   margin-top: 5px;
+}
+#lgcalendar #cBottom {
+  display: none;
+}
+@media (min-width: 992px) {
+  #lgcalendar #cBottom {
+    display: inline;
+    position: absolute;
+    height: 20px;
+    width: 95%;
+    background-color: #D9FBDC;
+    border: none;
+    bottom: -20px;
+    right: 0;
+  }
+}
+#lgcalendar #cRight {
+  display: none;
+  display: none;
+}
+@media (min-width: 992px) {
+  #lgcalendar #cRight {
+    display: inline;
+    position: absolute;
+    height: 95%;
+    width: 20px;
+    background-color: #D9FBDC;
+    border: none;
+    bottom: -20px;
+    right: -20px;
+  }
 }
