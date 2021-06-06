@@ -3,12 +3,14 @@
 ============= */
 
 footer{
+
     color: white;
     background-color: $lightnavy;
-    
+    text-align: center;
     h1{
-        display: flex;
-        justify-content: center;
+      @include md{
+        text-align: center;
+      }
 
         @include lg{
             display: none;
@@ -17,8 +19,14 @@ footer{
 
    #medsmall{
         padding-top: 10px;
-        display: flex;
-        justify-content: center;
+        // // display: flex;
+        // justify-content: center;
+
+        @include md{
+            font-size: rem-calc(16);
+            width: 390px;
+            text-align: left;
+        }
 
         @include lg{
             display: none;
@@ -27,20 +35,63 @@ footer{
 
     }
 
-    #largex{
-        display: none;
-
-        @include lg{
-            display: flex;
-            justify-content: center;
-        }
-    }
+  
 
     #socials{
         display: flex;
         justify-content: center;
         i{
             padding: 10px;
+        }
+        @include lg{
+            display: none;
+        }
+
+        font-size: rem-calc(30);
+    }
+
+    #under{
+        @include md{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+
+  
+
+    #largestuff{
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        #largex{
+            display: none;
+            text-align: left;
+            font-size: rem-calc(16);
+            padding-left: 10px;
+    
+            @include lg{
+                display: flex;
+                // justify-content: center;
+            }
+        }
+
+        #socialarge{
+            display: none;
+            @include lg{
+                display: flex;
+               i{
+                // padding: 10px;
+                padding-right: 10px;
+                padding-left: 10px;
+                font-size: rem-calc(20);
+               }
+            }
+          
         }
     }
 }
