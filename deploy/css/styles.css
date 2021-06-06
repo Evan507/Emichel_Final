@@ -1179,23 +1179,31 @@ footer #socials i {
 #calendar {
   position: relative;
   display: grid;
-  grid-template-columns: auto 105px 105px auto;
-  grid-template-areas: ". mon tu ." ". wed thur ." ". fri sat ." ". sun full .";
+  grid-template-columns: 105px 105px;
+  grid-template-areas: "mon tu " "wed thur" "fri sat" "sun full";
   gap: 40px;
   background-color: #9FE6AF;
   grid-area: calendar;
   margin-bottom: 30px;
   margin: 20px;
-  margin-left: 90px;
-  margin-right: 90px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 55px;
+  padding-right: 30px;
+  width: 280px;
 }
 @media (min-width: 768px) {
   #calendar {
-    grid-template-columns: auto 150px 150px auto;
+    grid-template-columns: 150px 150px;
     margin-bottom: 120px;
     margin-right: 225px;
+    margin-left: 90px;
+    margin-top: 50px;
+    padding-left: 70px;
+    padding-right: 10px;
+    width: 420px;
   }
 }
 #calendar > div {
