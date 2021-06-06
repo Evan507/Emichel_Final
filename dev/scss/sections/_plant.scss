@@ -11,7 +11,7 @@
         height: 390px;
         margin-left: 70px;
         margin-right: 255px;
-        margin-bottom: 120px;
+        margin-bottom: 15px;
     }
 
 
@@ -19,7 +19,7 @@
         height: 700px;
         margin-left: 217px;
         margin-right: 335px;
-        margin-bottom: 225px;
+        margin-bottom: 15px;
     }
 
 
@@ -27,7 +27,7 @@
         height: 830px;
         margin-left: 325px;
         margin-right: 560px;
-        margin-bottom: 275px;
+        margin-bottom: 15px;
     }
 
 
@@ -122,20 +122,34 @@
     
     }
     
-    #mainbutton{
-      display: none;
-      
-        button{
-            // margin-top: 400px;
-         
-        }
-    
-        @include md{
-            display: flex;
-       
-        }
-    
-    }
+   
 
 }
+
+#mainbutton{
+    display: none;
+    
+      button{
+          // margin-top: 400px;
+       
+      }
+  
+      @include md{
+          display: flex;
+     
+      }
+
+      margin-bottom: 120px;
+      margin-left: 70px;
+  
+      @include lg{
+        margin-bottom: 225px;
+        margin-left: 217px;
+      }
+
+      @include xl{
+        margin-left: 325px;
+        margin-bottom: 275px;
+      }
+  }
 

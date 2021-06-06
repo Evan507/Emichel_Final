@@ -170,6 +170,9 @@
         margin-bottom: 5px;
     }
 
+        @include xl{
+            margin-left: 75px;
+        }
 }
 
 #thisweek{
@@ -292,6 +295,7 @@
         text-align: center;
         color: white;
         background-color: $lightnavy;
+        padding: 3px;
     }
     h4{
         font-size: rem-calc(16);

@@ -837,7 +837,7 @@ footer #socials i {
     position: absolute;
     height: 20px;
     width: 90%;
-    background-color: #9FE6AF;
+    background-color: #D9FBDC;
     top: -20px;
     left: 0;
   }
@@ -846,7 +846,7 @@ footer #socials i {
   position: absolute;
   height: 90%;
   width: 20px;
-  background-color: #9FE6AF;
+  background-color: #D9FBDC;
   top: -20px;
   left: -20px;
 }
@@ -975,7 +975,7 @@ footer #socials i {
     height: 390px;
     margin-left: 70px;
     margin-right: 255px;
-    margin-bottom: 120px;
+    margin-bottom: 15px;
   }
 }
 @media (min-width: 992px) {
@@ -983,7 +983,7 @@ footer #socials i {
     height: 700px;
     margin-left: 217px;
     margin-right: 335px;
-    margin-bottom: 225px;
+    margin-bottom: 15px;
   }
 }
 @media (min-width: 1200px) {
@@ -991,7 +991,7 @@ footer #socials i {
     height: 830px;
     margin-left: 325px;
     margin-right: 560px;
-    margin-bottom: 275px;
+    margin-bottom: 15px;
   }
 }
 #plant h2 {
@@ -1079,12 +1079,27 @@ footer #socials i {
     display: none;
   }
 }
-#plant #mainbutton {
+
+#mainbutton {
   display: none;
+  margin-bottom: 120px;
+  margin-left: 70px;
 }
 @media (min-width: 768px) {
-  #plant #mainbutton {
+  #mainbutton {
     display: flex;
+  }
+}
+@media (min-width: 992px) {
+  #mainbutton {
+    margin-bottom: 225px;
+    margin-left: 217px;
+  }
+}
+@media (min-width: 1200px) {
+  #mainbutton {
+    margin-left: 325px;
+    margin-bottom: 275px;
   }
 }
 
@@ -1343,6 +1358,11 @@ footer #socials i {
     margin-bottom: 5px;
   }
 }
+@media (min-width: 1200px) {
+  #caltitle {
+    margin-left: 75px;
+  }
+}
 
 #thisweek {
   color: #21577A;
@@ -1431,6 +1451,7 @@ footer #socials i {
   text-align: center;
   color: white;
   background-color: #21577A;
+  padding: 3px;
 }
 #lgcalendar h4 {
   font-size: 1rem;
