@@ -1,4 +1,5 @@
 #lecture{
+    position: relative;
 margin-bottom: 30px;
 background-image: url("../img/chairs.jpg");
 background-size: cover;
@@ -73,7 +74,7 @@ justify-content: center;
         }
 
         @include lg{
-            margin-top: 350px;
+            margin-top: 360px;
             height: 55px;
             width: 180px;
         }
@@ -121,5 +122,77 @@ justify-content: center;
             font-size: rem-calc(30);
             width: 400px;
         }
+    }
+
+    #lTop{
+        display: none;
+        
+        @include md{
+            display: inline;
+            position: absolute;
+            height: 20px;
+            width: 95%;
+            background-color: $pale;
+            top:-20px;
+            left:0;
+        }
+        
+        @include lg{
+            display: none;
+        }
+    }
+    
+    #lLeft{
+        display: none;
+    
+        @include md{
+            display: inline;
+            position: absolute;
+            height: 95%;
+            width: 20px;
+            background-color: $pale;
+            top: -20px;
+            left:-20px;
+        }
+    
+            @include lg{
+                display: none;
+            }
+    }
+
+    #lBottom{
+        display: none;
+        @include lg{
+            display: inline;
+            position: absolute;
+            height: 20px;
+            width: 95%;
+            background-color: $pale;
+            border: none;
+            bottom:-20px;
+            right:0;
+        }
+
+        
+        
+    }
+
+    #lRight{
+        display: none;
+        @include lg{
+            display: inline;
+            position: absolute;
+            height: 95%;
+            width: 20px;
+            background-color: $pale;
+            border: none;
+            bottom:-20px;
+            right:-20px;
+        }
+
+      
+            display: none;
+        
+       
     }
 }
