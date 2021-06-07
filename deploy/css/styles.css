@@ -819,7 +819,6 @@ footer #largestuff #socialarge {
   height: 350px;
   background-position: center;
   position: relative;
-  display: flex;
   margin-bottom: 200px;
 }
 @media (min-width: 768px) {
@@ -845,13 +844,14 @@ footer #largestuff #socialarge {
 #reopen h2 {
   padding: 10px;
   color: #21577A;
-  justify-content: center;
-  align-items: bottom;
-  margin-bottom: 100px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #reopen h2 {
-    justify-content: flex-end;
+    text-align: left;
+    font-size: 1.625rem;
+    width: 190px;
+    margin-left: 300px;
   }
 }
 #reopen p {
@@ -863,15 +863,42 @@ footer #largestuff #socialarge {
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
-    text-align: right;
-    width: 270px;
+    text-align: left;
+    width: 190px;
+    font-size: 1.25rem;
   }
 }
-#reopen button {
+#reopen #redmo {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  #reopen #redmo {
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 992px) {
+  #reopen #redmo {
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+}
+#reopen #redmo button {
   height: 70px;
   width: 230px;
-  justify-content: center;
-  margin-top: 400px;
+  margin-top: 320px;
+}
+@media (min-width: 768px) {
+  #reopen #redmo button {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 992px) {
+  #reopen #redmo button {
+    margin-top: 35px;
+    height: 65px;
+    width: 155px;
+  }
 }
 #reopen #rTop {
   display: none;
