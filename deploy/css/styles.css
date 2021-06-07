@@ -385,6 +385,7 @@ button {
   font-family: Ubuntu, sans-serif;
   padding: 10px;
   border-style: none;
+  border-radius: 5px;
 }
 
 p {
@@ -551,6 +552,7 @@ header img {
     Footer
 ============= */
 footer {
+  margin-top: 250px;
   color: white;
   background-color: #21577A;
   text-align: center;
@@ -1229,18 +1231,96 @@ footer #largestuff #socialarge {
 @media (min-width: 768px) {
   #lecture p {
     display: flex;
+    width: 290px;
+    padding-left: 10px;
+    font-size: 1.375rem;
+  }
+}
+@media (min-width: 992px) {
+  #lecture p {
+    padding-left: 30px;
+    padding-top: 20px;
+    width: 330px;
+  }
+}
+@media (min-width: 1200px) {
+  #lecture p {
+    width: 400px;
+  }
+}
+#lecture #readmore {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  #lecture #readmore {
     justify-content: flex-end;
   }
 }
-#lecture h2 {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  padding-top: 15px;
+@media (min-width: 1200px) {
+  #lecture #readmore {
+    justify-content: flex-start;
+  }
+}
+#lecture #readmore button {
+  margin-top: 230px;
+  height: 45px;
+  width: 155px;
 }
 @media (min-width: 768px) {
-  #lecture h2 {
-    justify-content: flex-end;
+  #lecture #readmore button {
+    margin-top: 200px;
+  }
+}
+@media (min-width: 992px) {
+  #lecture #readmore button {
+    margin-top: 350px;
+    height: 55px;
+    width: 180px;
+  }
+}
+@media (min-width: 1200px) {
+  #lecture #readmore button {
+    margin-top: 575px;
+    height: 55px;
+    width: 166px;
+  }
+}
+#lecture #smalltitle {
+  text-align: center;
+  color: white;
+  padding-top: 35px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  #lecture #smalltitle {
+    display: none;
+  }
+}
+#lecture #large {
+  color: white;
+  display: none;
+}
+@media (min-width: 768px) {
+  #lecture #large {
+    display: flex;
+    width: 290px;
+    padding: 10px;
+    font-size: 1.375rem;
+  }
+}
+@media (min-width: 992px) {
+  #lecture #large {
+    padding-top: 35px;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  #lecture #large {
+    font-size: 1.875rem;
+    width: 400px;
   }
 }
 
