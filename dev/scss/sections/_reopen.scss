@@ -37,10 +37,22 @@
 
 
         @include md {
+            // display: flex;
+            justify-content: flex-end;
             text-align: left;
             font-size: rem-calc(26);
             width: 190px;
-            margin-left: 300px;
+            margin-left: auto;
+        }
+
+        @include lg{
+            width: 300px;
+            padding-top: 50px;
+            font-size: rem-calc(23);
+        }
+
+        @include xl{
+            padding-top: 125px;
         }
     }
 
@@ -56,6 +68,11 @@
             text-align: left;
             width: 190px;
             font-size: rem-calc(20);
+        }
+
+
+        @include lg{
+            width: 300px;
         }
     }
 
@@ -85,6 +102,7 @@
             margin-top: 35px;
             height: 65px;
             width: 155px;
+            margin-right: 105px;
         }
     }
     }
