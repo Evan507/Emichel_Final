@@ -386,6 +386,7 @@ button {
   padding: 10px;
   border-style: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 p {
@@ -414,6 +415,11 @@ input {
 a {
   font-family: Ubuntu, sans-serif;
   color: #21577A;
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
 }
 
 /* =============
@@ -1429,7 +1435,7 @@ footer #largestuff #socialarge {
 #mobile #sidecenter button {
   margin-left: 20px;
   margin-right: 20px;
-  padding: 40px;
+  padding: 30px;
   font-size: 1.25rem;
 }
 #mobile #sidecenter i {

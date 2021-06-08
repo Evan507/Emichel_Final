@@ -37,6 +37,7 @@ button{
     padding: 10px;
     border-style: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 p{
@@ -65,4 +66,9 @@ input{
 a{
     font-family: Ubuntu, sans-serif;
     color: $lightnavy;
+    cursor: pointer;
+}
+
+i{
+    cursor: pointer;
 }
