@@ -52,17 +52,22 @@ input{
     #row2{
           
         display: flex;
-        #burger{
+        
+        section{
             margin-left: auto;
-            padding-right: 10px;
-            justify-content: flex-end;
-            font-size: rem-calc(50);
-
-            @include md{
-                display: none;
-             }
-      
+            #burger{
+                // margin-left: 500%;
+                padding-right: 10px;
+                justify-content: flex-end;
+                font-size: rem-calc(50);
+    
+                @include md{
+                    display: none;
+                 }
+          
+            }
         }
+
 
         input{
             margin-left: 10px;
@@ -120,4 +125,21 @@ input{
 
 
 
+    }
+
+    #dropdownmenu{
+        padding-right: 10px;
+        // padding-bottom: 20px;
+        margin-top: 20px;
+            background-color: $pale;
+        text-align: right;
+
+        li{
+            margin-top: 10px;
+            font-size: rem-calc(20);
+        }
+
+        @include md{
+            display: none;
+        }
     }
