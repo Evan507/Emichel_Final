@@ -1691,7 +1691,7 @@ footer #largestuff #socialarge {
 }
 @media (min-width: 768px) {
   #calendar h4 {
-    font-size: 0.9375rem;
+    font-size: 1.25rem;
   }
 }
 #calendar h1 {
@@ -1767,14 +1767,14 @@ footer #largestuff #socialarge {
   grid-area: sat;
 }
 #sat h4 {
-  font-size: 0.6875rem;
+  font-size: 1rem;
 }
 
 #sun {
   grid-area: sun;
 }
 #sun h4 {
-  font-size: 0.6875rem;
+  font-size: 1rem;
 }
 
 #full {
