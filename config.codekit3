@@ -21,19 +21,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/img\/chairs.jpg" : {
-      "ft" : 16384,
-      "iS" : 769617,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/chairs.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/img\/logo.png" : {
       "ft" : 32768,
       "iS" : 47066,
@@ -43,58 +30,6 @@
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/plants.jpg" : {
-      "ft" : 16384,
-      "iS" : 649139,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/plants.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/spring.jpg" : {
-      "ft" : 16384,
-      "iS" : 282407,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/spring.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/summer.jpg" : {
-      "ft" : 16384,
-      "iS" : 246482,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/summer.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/winter.jpg" : {
-      "ft" : 16384,
-      "iS" : 126713,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/winter.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75

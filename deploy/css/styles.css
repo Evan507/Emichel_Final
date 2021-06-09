@@ -832,11 +832,11 @@ footer #largestuff #socialarge {
   }
 }
 #main img {
-  width: 100%;
+  width: 575px;
 }
 @media (min-width: 768px) {
   #main img {
-    width: auto;
+    width: 465px;
   }
 }
 @media (min-width: 768px) {
