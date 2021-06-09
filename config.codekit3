@@ -34,45 +34,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/crab.jpg" : {
-      "ft" : 16384,
-      "iS" : 591870,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/crab.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/fall.jpg" : {
-      "ft" : 16384,
-      "iS" : 326183,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/fall.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/info.jpg" : {
-      "ft" : 16384,
-      "iS" : 376438,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/info.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/img\/logo.png" : {
       "ft" : 32768,
       "iS" : 47066,

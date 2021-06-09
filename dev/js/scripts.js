@@ -15,3 +15,6 @@ $(".nav-btns").on("click", function(){
        isVisible = false;
    }
 })
+
+
+
