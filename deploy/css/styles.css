@@ -661,6 +661,9 @@ footer #largestuff #socialarge {
   }
 }
 
+#hero {
+  margin-bottom: 150px;
+}
 #hero h1 {
   color: #21577A;
   margin-bottom: 25px;
@@ -702,6 +705,35 @@ footer #largestuff #socialarge {
     margin-right: 335px;
   }
 }
+#hero #mainhero #pageballs {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 250px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+@media (min-width: 768px) {
+  #hero #mainhero #pageballs {
+    margin-top: 190px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media (min-width: 992px) {
+  #hero #mainhero #pageballs {
+    margin-top: 315px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #mainhero #pageballs {
+    margin-top: 475px;
+  }
+}
+#hero #mainhero #pageballs button {
+  background-color: white;
+  border: solid black 1px;
+  border-radius: 100%;
+}
 #hero #mainhero h3 {
   display: none;
 }
@@ -715,6 +747,7 @@ footer #largestuff #socialarge {
 #hero #mainhero h2 {
   text-align: center;
   display: inline-block;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   #hero #mainhero h2 {
@@ -766,15 +799,46 @@ footer #largestuff #socialarge {
 #main h2 {
   color: #21577A;
   padding: 10px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  #main h2 {
+    text-align: left;
+  }
 }
 #main p {
   padding: 10px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  #main p {
+    text-align: left;
+    width: auto;
+  }
 }
 #main button {
   margin: 10px;
 }
+#main #button {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  #main #button {
+    justify-content: flex-start;
+  }
+}
+#main img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #main img {
+    width: auto;
+  }
+}
 @media (min-width: 768px) {
   #main {
+    width: auto;
     display: grid;
     grid-template-columns: 75px auto 230px;
     grid-template-areas: ". main .";
@@ -795,6 +859,18 @@ footer #largestuff #socialarge {
 }
 #main > div article > div {
   background-color: #9FE6AF;
+}
+@media (min-width: 768px) {
+  #main > div article > div {
+    width: 466px;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 992px) {
+  #main > div article > div {
+    width: auto;
+    margin-top: 0px;
+  }
 }
 
 #autumn {
@@ -1463,7 +1539,7 @@ footer #largestuff #socialarge {
   gap: 30px;
   background-color: #9FE6AF;
   grid-area: calendar;
-  margin-bottom: 30px;
+  margin-bottom: 120px;
   margin: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -1486,6 +1562,7 @@ footer #largestuff #socialarge {
   }
 }
 #calendar > div {
+  cursor: pointer;
   background-color: #D9FBDC;
   border: solid 2px #21577A;
   height: 105px;
@@ -1672,6 +1749,7 @@ footer #largestuff #socialarge {
   justify-content: space-around;
 }
 #lgcalendar #week1 > div {
+  cursor: pointer;
   margin-bottom: 50px;
   background-color: #D9FBDC;
   border: solid 2px #21577A;
@@ -1683,6 +1761,7 @@ footer #largestuff #socialarge {
   justify-content: space-around;
 }
 #lgcalendar #week2 > div {
+  cursor: pointer;
   margin-bottom: 50px;
   background-color: #D9FBDC;
   border: solid 2px #21577A;
@@ -1694,6 +1773,7 @@ footer #largestuff #socialarge {
   justify-content: space-around;
 }
 #lgcalendar #week3 > div {
+  cursor: pointer;
   margin-bottom: 50px;
   background-color: #D9FBDC;
   border: solid 2px #21577A;
@@ -1705,6 +1785,7 @@ footer #largestuff #socialarge {
   justify-content: space-around;
 }
 #lgcalendar #week4 > div {
+  cursor: pointer;
   background-color: #D9FBDC;
   border: solid 2px #21577A;
   height: 90px;

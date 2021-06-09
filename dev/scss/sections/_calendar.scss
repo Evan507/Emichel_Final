@@ -13,7 +13,7 @@
 
     grid-area: calendar;
 
-    margin-bottom: 30px;
+    margin-bottom: 120px;
     margin: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -35,12 +35,14 @@
     }
 
     >div{
+        cursor: pointer;
         // // display: flex;
         // flex-direction:column;
         background-color: $pale;
         border: solid 2px $lightnavy;
         height: 105px;
         width: 105px;
+
 
         @include md{
             height: 150px;
@@ -217,7 +219,7 @@
 
     #week1{
         >div{
-           
+            cursor: pointer;
             margin-bottom: 50px;
             background-color: $pale;
             border: solid 2px $lightnavy;
@@ -236,6 +238,7 @@
 
     #week2{
         >div{
+            cursor: pointer;
             margin-bottom: 50px;
             // flex-direction:column;
             background-color: $pale;
@@ -255,7 +258,7 @@
 
     #week3{
         >div{
- 
+            cursor: pointer;
             margin-bottom: 50px;
             background-color: $pale;
             border: solid 2px $lightnavy;
@@ -275,7 +278,7 @@
 
     #week4{
         >div{
-        
+            cursor: pointer;
             // flex-direction:column;
             background-color: $pale;
             border: solid 2px $lightnavy;
