@@ -1163,7 +1163,6 @@ footer #largestuff #socialarge {
   background-size: cover;
   background-position: center;
   height: 350px;
-  margin-bottom: 130px;
 }
 @media (min-width: 768px) {
   #plant {
@@ -1187,15 +1186,6 @@ footer #largestuff #socialarge {
     margin-left: 325px;
     margin-right: 560px;
     margin-bottom: 15px;
-  }
-}
-#plant h2 {
-  text-align: center;
-  color: #21577A;
-}
-@media (min-width: 768px) {
-  #plant h2 {
-    display: none;
   }
 }
 #plant #pTop {
@@ -1264,16 +1254,6 @@ footer #largestuff #socialarge {
     left: -20px;
   }
 }
-#plant #mobilebutton {
-  margin-top: 350px;
-  display: flex;
-  justify-content: center;
-}
-@media (min-width: 768px) {
-  #plant #mobilebutton {
-    display: none;
-  }
-}
 
 #mainbutton {
   display: none;
@@ -1295,6 +1275,29 @@ footer #largestuff #socialarge {
   #mainbutton {
     margin-left: 325px;
     margin-bottom: 275px;
+  }
+}
+
+#mobilebutton {
+  margin-top: 10px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  #mobilebutton {
+    display: none;
+  }
+}
+
+#mobiletitle h2 {
+  text-align: center;
+  color: #21577A;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  #mobiletitle h2 {
+    display: none;
   }
 }
 
