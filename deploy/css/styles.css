@@ -796,6 +796,9 @@ footer #largestuff #socialarge {
   }
 }
 
+#main {
+  margin-bottom: 60px;
+}
 #main h2 {
   color: #21577A;
   padding: 10px;
@@ -1540,7 +1543,7 @@ footer #largestuff #socialarge {
   background-color: #9FE6AF;
   grid-area: calendar;
   margin-bottom: 120px;
-  margin: 20px;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
@@ -1590,6 +1593,7 @@ footer #largestuff #socialarge {
   text-align: center;
   color: #21577A;
   align-items: center;
+  margin-top: 20px;
 }
 @media (min-width: 768px) {
   #calendar h4 {
@@ -1684,13 +1688,14 @@ footer #largestuff #socialarge {
 }
 
 #caltitle {
+  margin-top: 120px;
   margin-bottom: 20px;
   margin-left: 20px;
   color: #21577A;
 }
 @media (min-width: 768px) {
   #caltitle {
-    margin-left: 90px;
+    margin-left: 70px;
   }
 }
 @media (min-width: 992px) {
@@ -1708,10 +1713,11 @@ footer #largestuff #socialarge {
 #thisweek {
   color: #21577A;
   margin-left: 20px;
+  margin-bottom: 10px;
 }
 @media (min-width: 768px) {
   #thisweek {
-    margin-left: 90px;
+    margin-left: 70px;
   }
 }
 @media (min-width: 992px) {
