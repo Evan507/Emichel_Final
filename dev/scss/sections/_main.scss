@@ -1,4 +1,5 @@
 #main{
+   
    margin-bottom: 60px;
  h2{
      color: $lightnavy;
@@ -14,6 +15,8 @@
  p{
      padding: 10px;
      text-align: center;
+
+    
 
      @include md{
         //  width: 400px;
@@ -81,6 +84,17 @@
     article{
         margin-bottom: 15px;
         gap: 15px;
+        width: 575px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include md{
+            width: auto;
+        }
+
+        @include lg{
+            margin-bottom: 140px;
+        }
         >div{
             background-color: $ligher;
             // margin-bottom: 10px;
@@ -89,6 +103,7 @@
             @include md{
                 width: 466px;
                 margin-top: 10px;
+
             }
 
             @include lg{
@@ -98,14 +113,82 @@
         }
     }
 }
+
+#mTop{
+    display: none;
+    
+    @include lg{
+        display: inline;
+        position: absolute;
+        height: 20px;
+        width: 90%;
+        background-color: $pale;
+        top:-20px;
+        right:0;
+    }
+    
+    
+}
+
+#mRight {
+    display: none;
+
+    @include lg{
+        display: inline;
+        position: absolute;
+        height: 90%;
+        width: 20px;
+        background-color: $pale;
+        top: -20px;
+        right:-20px;
+    }
+
+}
+
+#mBottom{
+    display: none;
+    
+    @include lg{
+        display: inline;
+        position: absolute;
+        height: 20px;
+        width: 90%;
+        background-color: $pale;
+        bottom:-20px;
+        left:0;
+    }
+    
+    
+}
+
+#mLeft {
+    display: none;
+
+    @include lg{
+        display: inline;
+        position: absolute;
+        height: 90%;
+        width: 20px;
+        background-color: $pale;
+        bottom: -20px;
+        left:-20px;
+    }
+
+}
 }
 
 #autumn{
+>div{
+    position: relative;
+}
     grid-area: autumn;
  
 }
 
 #winter{
+    >div{
+        position: relative;
+    }
     grid-area: winter;
     @include lg{
         flex-direction: row-reverse;
@@ -113,10 +196,16 @@
 }
 
 #spring{
+    >div{
+        position: relative;
+    }
     grid-area: spring;
 }
 
 #summer{
+    >div{
+        position: relative;
+    }
     grid-area:summer;
     @include lg{
         flex-direction: row-reverse;

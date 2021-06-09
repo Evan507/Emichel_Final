@@ -14,6 +14,14 @@
         }
 
         padding-left: 10px;
+
+        @include md{
+            padding-left: 50px;
+        }
+
+        @include lg{
+            padding-left: 50px;
+        }
     }
 
  #mainhero{
