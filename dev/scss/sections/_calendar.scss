@@ -156,7 +156,12 @@
 
     h4 {
 
-        font-size: rem-calc(16);
+        font-size: rem-calc(11);
+
+        @include md{
+           
+            font-size: rem-calc(16);
+        }
     }
 }
 
@@ -164,7 +169,11 @@
     grid-area: sun;
 
     h4 {
-        font-size: rem-calc(16);
+        font-size: rem-calc(11);
+        @include md{
+           
+            font-size: rem-calc(16);
+        }
     }
 }
 
@@ -229,7 +238,7 @@
     }
 
     @include xl {
-        width: 1040px;
+        width: 950px;
         margin-left: 75px;
     }
 

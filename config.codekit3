@@ -9,19 +9,6 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
-    "\/deploy\/aaron-huber-xmWVJj2yEdY-unsplash-2.jpg" : {
-      "ft" : 16384,
-      "iS" : 3068825,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/aaron-huber-xmWVJj2yEdY-unsplash-2.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -66,6 +53,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/fall copy.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/fall.jpg" : {
+      "ft" : 16384,
+      "iS" : 3068825,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/fall.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
