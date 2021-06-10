@@ -557,19 +557,19 @@ header img {
   }
 }
 
-ul {
+#dropdownmenu {
   padding-right: 10px;
   margin-top: 20px;
   background-color: #D9FBDC;
   text-align: right;
   display: hidden;
 }
-ul li {
+#dropdownmenu li {
   margin-top: 10px;
   font-size: 1.25rem;
 }
 @media (min-width: 768px) {
-  ul {
+  #dropdownmenu {
     display: none;
   }
 }
