@@ -1,166 +1,168 @@
-#hero{
+#hero {
 
     margin-bottom: 150px;
 
-    h1{
+    h1 {
         color: $lightnavy;
         margin-bottom: 25px;
         margin-top: 25px;
 
         display: none;
 
-        @include md{
+        @include md {
             display: flex;
         }
 
         padding-left: 10px;
 
-        @include md{
+        @include md {
             padding-left: 50px;
         }
 
-        @include lg{
+        @include lg {
             padding-left: 50px;
         }
     }
 
- #mainhero{
-     
-  
-     padding-top: 10px;
-     padding-left: 10px;
-     border-bottom: 2px solid lighter;
-     color: $pale;
-    background-image: url("../img/crab.jpg");
-    position: relative;
-    height: 315px;
-
-    background-position: center right;
-
-   background-size: cover;
-
-   @include md{
-       height: 285px;
-       margin: 50px;
-       margin-right: 200px;
-   }
-
-   @include lg{
-    height: 430px;
-   
-
-}
-
-@include xl{
-    height: 590px;
-    margin-right: 335px;
-  
-}
+    #mainhero {
 
 
-   
-#pageballs{
-display: flex;
-justify-content: space-around;
-margin-top: 250px;
-margin-left: 100px;
-margin-right: 100px;
+        padding-top: 10px;
+        padding-left: 10px;
+        border-bottom: 2px solid lighter;
+        color: $pale;
+        background-image: url("../img/crab.jpg");
+        position: relative;
+        height: 315px;
 
-@include md{
+        background-position: center right;
 
-margin-top: 190px;
-margin-left: 100px;
-margin-right: 100px;
-}
+        background-size: cover;
 
+        @include md {
+            height: 285px;
+            margin: 50px;
+            margin-right: 200px;
+        }
 
-@include lg{
-    margin-top: 315px;
-}
-
-@include xl{
-    margin-top: 475px;
-}
-
- button{
-    background-color: white;
-    border: solid black 1px;
-    border-radius: 100%;
-
- }
-
-}
-    
+        @include lg {
+            height: 430px;
 
 
-h3{
-    display: none;
+        }
 
-    @include md{
-        display: flex;
-        padding: 10px;
-        padding-bottom: 1px;
-        // border-bottom: 2px $pale solid;
- 
+        @include xl {
+            height: 590px;
+            margin-right: 335px;
+
+        }
+
+
+
+        #pageballs {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 250px;
+            margin-left: 100px;
+            margin-right: 100px;
+
+            @include md {
+
+                margin-top: 190px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+
+
+            @include lg {
+                margin-top: 315px;
+            }
+
+            @include xl {
+                margin-top: 475px;
+            }
+
+            button {
+                background-color: white;
+                border: solid black 1px;
+                border-radius: 100%;
+
+            }
+
+        }
+
+
+
+        h3 {
+            display: none;
+
+            @include md {
+                display: flex;
+                padding: 10px;
+                padding-bottom: 1px;
+                // border-bottom: 2px $pale solid;
+
+            }
+        }
+
+        h2 {
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+
+            @include md {
+                text-align: left;
+                padding-left: 10px;
+                border-bottom: 2px $pale solid;
+
+            }
+        }
+
+
+        #hTop {
+            display: none;
+
+            @include md {
+                display: inline;
+                position: absolute;
+                height: 20px;
+                width: 90%;
+                background-color: $pale;
+                top: -20px;
+                right: 0;
+            }
+
+        }
+
+        #hRight {
+            display: none;
+
+            @include md {
+                display: inline;
+                position: absolute;
+                height: 90%;
+                width: 20px;
+                background-color: $pale;
+                top: -20px;
+                right: -20px;
+            }
+        }
+
     }
-}
- h2{
-     text-align: center;
-    display: inline-block;
-    cursor: pointer;
-     @include md{
-         text-align: left;
-         padding-left: 10px;
-         border-bottom: 2px $pale solid;
 
-     }
- }
-
-
-#hTop{
-    display: none;
-    
-    @include md{
-        display: inline;
-        position: absolute;
-        height: 20px;
-        width: 90%;
-        background-color: $pale;
-        top:-20px;
-        right:0;
-    }
-    
-}
-
-#hRight {
-    display: none;
-
-    @include md{
-        display: inline;
-        position: absolute;
-        height: 90%;
-        width: 20px;
-        background-color: $pale;
-        top: -20px;
-        right:-20px;
-    }
-}
-
- }
-
- #Read{
+    #Read {
 
         display: flex;
         justify-content: center;
         margin-bottom: 30px;
         margin-top: 30px;
 
-        @include md{
+        @include md {
             display: none;
         }
-    
-   
- }
+
+
+    }
 
 
 

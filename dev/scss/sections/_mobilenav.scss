@@ -1,11 +1,11 @@
-#mobile{
+#mobile {
 
-    @include md{
+    @include md {
         display: none;
     }
 
-    #sidecenter{
-    
+    #sidecenter {
+
         height: 120px;
         margin-top: 30px;
         margin-bottom: 120px;
@@ -16,18 +16,18 @@
 
         justify-content: space-around;
         align-content: center;
-        
 
-      button{
-        //   height: 80px;
-          margin-left: 20px;
-          margin-right: 20px;
-          padding: 30px;
-          font-size: rem-calc(20);
-      }
-        
 
-        i{
+        button {
+            //   height: 80px;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 30px;
+            font-size: rem-calc(20);
+        }
+
+
+        i {
             // display: flex;
             color: $lightnavy;
             font-size: 100px;
@@ -36,19 +36,20 @@
         }
     }
 
-    #MobDon{
+    #MobDon {
         display: flex;
         justify-content: center;
-        button{
+
+        button {
             padding: 50px;
             font-size: rem-calc(40);
             background-color: $turk;
         }
 
-   margin-bottom: 120px;
+        margin-bottom: 120px;
 
         background-color: $pale;
-        
-        
+
+
     }
 }

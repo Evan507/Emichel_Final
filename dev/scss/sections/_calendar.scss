@@ -1,19 +1,19 @@
-#calendar{
+#calendar {
     position: relative;
     display: grid;
-    grid-template-columns: 105px 105px ;
-    grid-template-areas: 
-    "mon tu "
-    "wed thur"
-    "fri sat"
-    "sun full";
+    grid-template-columns: 105px 105px;
+    grid-template-areas:
+        "mon tu "
+        "wed thur"
+        "fri sat"
+        "sun full";
 
     gap: 30px;
     background-color: $ligher;
 
     grid-area: calendar;
 
-   
+
     margin-bottom: 120px;
     margin-top: 10px;
     margin-left: auto;
@@ -24,7 +24,7 @@
     padding-right: 20px;
     width: 280px;
 
-    @include md{
+    @include md {
         grid-template-columns: 150px 150px;
         margin-bottom: 120px;
         margin-right: 225px;
@@ -35,7 +35,7 @@
         width: 420px;
     }
 
-    >div{
+    >div {
         cursor: pointer;
         // // display: flex;
         // flex-direction:column;
@@ -45,28 +45,28 @@
         width: 105px;
 
 
-        @include md{
+        @include md {
             height: 150px;
-        width: 150px; 
+            width: 150px;
         }
 
-        
+
     }
 
-    h3{
+    h3 {
         padding: 5px;
         text-align: center;
-            color: white;
-            background-color: $lightnavy;
-            font-size: rem-calc(16);
-  
+        color: white;
+        background-color: $lightnavy;
+        font-size: rem-calc(16);
 
-            @include md{
-                font-size: rem-calc(20);
-            }
+
+        @include md {
+            font-size: rem-calc(20);
+        }
     }
 
-    h4{
+    h4 {
         // display: flex;
         text-align: center;
         color: $lightnavy;
@@ -75,130 +75,141 @@
         // padding-top: 30px;
         margin-top: 20px;
 
-        @include md{
+        @include md {
             font-size: rem-calc(20);
         }
     }
 
-    h1{
+    h1 {
         margin-bottom: 30px;
     }
 
     #cTop {
         display: none;
-        @include md{
+
+        @include md {
             display: inline;
             position: absolute;
             height: 20px;
             width: 90%;
             background-color: $pale;
             border: none;
-            top:-20px;
-            left:0;
+            top: -20px;
+            left: 0;
         }
 
-        @include lg{
+        @include lg {
             display: none;
         }
-        
+
     }
 
     #cLeft {
         display: none;
-        @include md{
+
+        @include md {
             display: inline;
             position: absolute;
             height: 90%;
             width: 20px;
             background-color: $pale;
             border: none;
-            top:-20px;
-            left:-20px;
+            top: -20px;
+            left: -20px;
         }
 
-        @include lg{
+        @include lg {
             display: none;
         }
-       
+
     }
 
-@include lg{
-    display: none;
+    @include lg {
+        display: none;
+    }
+
 }
-        
-    }
-   
 
-    #mon{
-        grid-area: mon;
-    }
-    #tu{
-        grid-area: tu;
-    }
-    #wed{
-        grid-area: wed;
-    }
-    #thur{
-        grid-area: thur;
-    }
-    #fri{
-        grid-area: fri;
-    }
-    #sat{
-        grid-area: sat;
-        h4{
-         
-            font-size: rem-calc(16);
-        }
-    }
-    #sun{
-        grid-area: sun;
-        h4{
-            font-size: rem-calc(16);
-        }
-    }
-    #full{
-        grid-area: full;
-    }
 
-#caltitle{
+#mon {
+    grid-area: mon;
+}
+
+#tu {
+    grid-area: tu;
+}
+
+#wed {
+    grid-area: wed;
+}
+
+#thur {
+    grid-area: thur;
+}
+
+#fri {
+    grid-area: fri;
+}
+
+#sat {
+    grid-area: sat;
+
+    h4 {
+
+        font-size: rem-calc(16);
+    }
+}
+
+#sun {
+    grid-area: sun;
+
+    h4 {
+        font-size: rem-calc(16);
+    }
+}
+
+#full {
+    grid-area: full;
+}
+
+#caltitle {
     margin-top: 120px;
     margin-bottom: 20px;
     margin-left: 20px;
     color: $lightnavy;
 
-    @include md{
+    @include md {
         margin-left: 70px;
     }
 
-    @include lg{
+    @include lg {
         margin-left: 25px;
         margin-bottom: 5px;
     }
 
-        @include xl{
-            margin-left: 75px;
-        }
+    @include xl {
+        margin-left: 75px;
+    }
 }
 
-#thisweek{
+#thisweek {
 
-        color: $lightnavy;
-        margin-left: 20px;
-        margin-bottom: 10px;
+    color: $lightnavy;
+    margin-left: 20px;
+    margin-bottom: 10px;
 
-        @include md{
-            margin-left: 70px;
-        }
-    
+    @include md {
+        margin-left: 70px;
+    }
 
-    @include lg{
+
+    @include lg {
         display: none;
     }
 }
 
 
-#lgcalendar{
+#lgcalendar {
     position: relative;
     margin-bottom: 225px;
     display: none;
@@ -211,29 +222,29 @@
     margin-right: 195px;
     color: $lightnavy;
 
-    @include lg{
+    @include lg {
         display: grid;
         // display: flex;
         // flex-direction: row;
     }
 
-    @include xl{
+    @include xl {
         width: 1040px;
         margin-left: 75px;
     }
 
-    #week1{
-        >div{
+    #week1 {
+        >div {
             cursor: pointer;
             margin-bottom: 50px;
             background-color: $pale;
             border: solid 2px $lightnavy;
             height: 90px;
             width: 90px;
-    
-         
-    
-            
+
+
+
+
         }
 
         display: flex;
@@ -241,8 +252,8 @@
     }
 
 
-    #week2{
-        >div{
+    #week2 {
+        >div {
             cursor: pointer;
             margin-bottom: 50px;
             // flex-direction:column;
@@ -250,30 +261,30 @@
             border: solid 2px $lightnavy;
             height: 90px;
             width: 90px;
-    
-            
-           
-       
+
+
+
+
         }
 
-        display: flex; 
+        display: flex;
         justify-content: space-around;
     }
 
 
-    #week3{
-        >div{
+    #week3 {
+        >div {
             cursor: pointer;
             margin-bottom: 50px;
             background-color: $pale;
             border: solid 2px $lightnavy;
             height: 90px;
             width: 90px;
-    
-           
-    
-            
-   
+
+
+
+
+
         }
 
         display: flex;
@@ -281,86 +292,89 @@
     }
 
 
-    #week4{
-        >div{
+    #week4 {
+        >div {
             cursor: pointer;
             // flex-direction:column;
             background-color: $pale;
             border: solid 2px $lightnavy;
             height: 90px;
             width: 90px;
-    
-            
-       
+
+
+
         }
 
         display: flex;
         justify-content: space-around;
     }
 
-    h3{
+    h3 {
         font-size: rem-calc(16);
         text-align: center;
         color: white;
         background-color: $lightnavy;
         padding: 3px;
     }
-    h4{
-       
-            font-size: rem-calc(16);
-        
+
+    h4 {
+
+        font-size: rem-calc(16);
+
         text-align: center;
         margin-top: 10px;
     }
 
-    #sat{
-        h4{
+    #sat {
+        h4 {
             font-size: rem-calc(11);
             margin-top: 5px;
         }
     }
 
-    #sun{
-        h4{
+    #sun {
+        h4 {
             font-size: rem-calc(11);
             margin-top: 5px;
         }
     }
 
-    #cBottom{
+    #cBottom {
         display: none;
-        @include lg{
+
+        @include lg {
             display: inline;
             position: absolute;
             height: 20px;
             width: 95%;
             background-color: $pale;
             border: none;
-            bottom:-20px;
-            right:0;
+            bottom: -20px;
+            right: 0;
         }
 
-        
-        
+
+
     }
 
-    #cRight{
+    #cRight {
         display: none;
-        @include lg{
+
+        @include lg {
             display: inline;
             position: absolute;
             height: 95%;
             width: 20px;
             background-color: $pale;
             border: none;
-            bottom:-20px;
-            right:-20px;
+            bottom: -20px;
+            right: -20px;
         }
 
-      
-            display: none;
-        
-       
+
+        display: none;
+
+
     }
 
 

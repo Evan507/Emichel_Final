@@ -1,5 +1,5 @@
 #reopen {
-    
+
     background-image: url("../img/info.jpg");
     background-size: cover;
     height: 350px;
@@ -45,13 +45,13 @@
             margin-left: auto;
         }
 
-        @include lg{
+        @include lg {
             width: 300px;
             padding-top: 50px;
             font-size: rem-calc(23);
         }
 
-        @include xl{
+        @include xl {
             padding-top: 125px;
         }
     }
@@ -71,43 +71,43 @@
         }
 
 
-        @include lg{
+        @include lg {
             width: 300px;
         }
     }
 
-    #redmo{
+    #redmo {
         display: flex;
         justify-content: center;
 
-        @include md{
+        @include md {
             justify-content: flex-start;
         }
 
-        @include lg{
+        @include lg {
             justify-content: flex-end;
             padding-right: 50px;
         }
 
-    button{
-        height: 70px;
-        width: 230px;
-        margin-top: 320px;
+        button {
+            height: 70px;
+            width: 230px;
+            margin-top: 320px;
 
-        @include md{
-            margin-top: 25px; 
-        }
+            @include md {
+                margin-top: 25px;
+            }
 
-        @include lg{
-            margin-top: 35px;
-            height: 65px;
-            width: 155px;
-            margin-right: 105px;
+            @include lg {
+                margin-top: 35px;
+                height: 65px;
+                width: 155px;
+                margin-right: 105px;
+            }
         }
     }
-    }
 
-    
+
 
     // button{
     //     display: flex;
@@ -116,16 +116,17 @@
 
     #rTop {
         display: none;
-        @include md{
+
+        @include md {
             display: inline;
             position: absolute;
             height: 20px;
             width: 90%;
             background-color: $pale;
-            top:-20px;
-            left:0;
+            top: -20px;
+            left: 0;
         }
-        
+
     }
 
     #rLeft {
@@ -133,7 +134,7 @@
         height: 90%;
         width: 20px;
         background-color: $pale;
-        top:-20px;
-        left:-20px;
+        top: -20px;
+        left: -20px;
     }
 }

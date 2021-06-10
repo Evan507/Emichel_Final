@@ -1,366 +1,379 @@
-#main{
-   
-   margin-bottom: 60px;
- h2{
-     color: $lightnavy;
-     padding: 10px;
+#main {
 
-     text-align: center;
-     
-     @include lg{
-         text-align: left;
-     }
- } 
+    margin-bottom: 60px;
 
- p{
-     padding: 10px;
-     text-align: center;
+    h2 {
+        color: $lightnavy;
+        padding: 10px;
 
-    
+        text-align: center;
 
-     @include md{
-        //  width: 400px;
-     }
+        @include lg {
+            text-align: left;
+        }
+    }
 
-     @include lg{
-         text-align: left;
-         width: auto;
-     }
- }
-
- button{
-     margin: 10px;
-    // display: flex;
-    // // justify-content: center;
-
- }
-
- #button{
-     display: flex;
-     justify-content: center;
-
-     @include lg{
-        justify-content: flex-start;
-     }
- }
+    p {
+        padding: 10px;
+        text-align: center;
 
 
 
- img{
+        @include md {
+            //  width: 400px;
+        }
 
-      width: 575px;
-   
-   @include md{
-       width: 465px;
-   }
- }
-    @include md{
+        @include lg {
+            text-align: left;
+            width: auto;
+        }
+    }
+
+    button {
+        margin: 10px;
+        // display: flex;
+        // // justify-content: center;
+
+    }
+
+    #button {
+        display: flex;
+        justify-content: center;
+
+        @include lg {
+            justify-content: flex-start;
+        }
+    }
+
+
+
+    img {
+
+        width: 575px;
+
+        @include md {
+            width: 465px;
+        }
+    }
+
+    @include md {
         width: auto;
         display: grid;
         grid-template-columns: 75px auto 230px;
         grid-template-areas: ". main .";
-     
+
     }
 
 
-    @include lg{
-       article{
-           display: flex;
+    @include lg {
+        article {
+            display: flex;
 
-       
-       }
 
-     
-    }
-
-//    section{
-//     grid-area: main;
-//    }
-
->div{
-    grid-area: main;
-    margin-bottom: 15px;
-
-    article{
-        margin-bottom: 100px;
-        gap: 15px;
-        width: 575px;
-        margin-left: auto;
-        margin-right: auto;
-
-        @include md{
-            width: auto;
-            margin-right: 200px;
-            margin-left: 55px;
         }
 
-        @include lg{
+
+    }
+
+    //    section{
+    //     grid-area: main;
+    //    }
+
+    >div {
+        grid-area: main;
+        margin-bottom: 15px;
+
+        article {
+            margin-bottom: 100px;
+            gap: 15px;
+            width: 575px;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 140px;
-        }
-        >div{
-            background-color: $ligher;
-            // margin-bottom: 10px;
-           
 
-            @include md{
-                width: 466px;
-                margin-top: 10px;
-
-            }
-
-            @include lg{
+            @include md {
                 width: auto;
-                margin-top: 0px;
+                margin-right: 200px;
+                margin-left: 55px;
+            }
+
+            @include lg {
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 140px;
+            }
+
+            >div {
+                background-color: $ligher;
+                // margin-bottom: 10px;
+
+
+                @include md {
+                    width: 466px;
+                    margin-top: 10px;
+
+                }
+
+                @include lg {
+                    width: auto;
+                    margin-top: 0px;
+                }
             }
         }
     }
-}
 
-#mTop{
-    display: none;
-    
-    @include lg{
-        display: inline;
-        position: absolute;
-        height: 20px;
-        width: 90%;
-        background-color: $pale;
-        top:-20px;
-        right:0;
-    }
-    
-    
-}
-
-#mRight {
-    display: none;
-
-    @include lg{
-        display: inline;
-        position: absolute;
-        height: 90%;
-        width: 20px;
-        background-color: $pale;
-        top: -20px;
-        right:-20px;
-    }
-
-}
-
-#mmTop{
-    display: none;
-    
-    @include md{
-        display: inline;
-        position: absolute;
-        height: 20px;
-        width: 90%;
-        background-color: $pale;
-        top:-30px;
-        right: -19px;
-    }
-    @include lg{
+    #mTop {
         display: none;
-    }
-    
-}
 
-#mmRight {
-    display: none;
+        @include lg {
+            display: inline;
+            position: absolute;
+            height: 20px;
+            width: 90%;
+            background-color: $pale;
+            top: -20px;
+            right: 0;
+        }
 
-    @include md{
-        display: inline;
-        position: absolute;
-        height: 45%;
-        width: 20px;
-        background-color: $pale;
-        top: -30px;
-        right: -19px;
+
     }
 
-    @include lg{
+    #mRight {
         display: none;
-    }
-}
 
-#mmTop2{
-    display: none;
-    
-    @include md{
-        display: inline;
-        position: absolute;
-        height: 20px;
-        width: 90%;
-        background-color: $pale;
-        top:-30px;
-        left: -20px;
+        @include lg {
+            display: inline;
+            position: absolute;
+            height: 90%;
+            width: 20px;
+            background-color: $pale;
+            top: -20px;
+            right: -20px;
+        }
+
     }
-    @include lg{
+
+    #mmTop {
         display: none;
+
+        @include md {
+            display: inline;
+            position: absolute;
+            height: 20px;
+            width: 90%;
+            background-color: $pale;
+            top: -30px;
+            right: -19px;
+        }
+
+        @include lg {
+            display: none;
+        }
+
     }
-    
-}
 
-#mmLeft {
-    display: none;
-
-    @include md{
-        display: inline;
-        position: absolute;
-        height: 45%;
-        width: 20px;
-        background-color: $pale;
-        top: -30px;
-        left: -20px;
-    }
-
-    @include lg{
+    #mmRight {
         display: none;
+
+        @include md {
+            display: inline;
+            position: absolute;
+            height: 45%;
+            width: 20px;
+            background-color: $pale;
+            top: -30px;
+            right: -19px;
+        }
+
+        @include lg {
+            display: none;
+        }
+    }
+
+    #mmTop2 {
+        display: none;
+
+        @include md {
+            display: inline;
+            position: absolute;
+            height: 20px;
+            width: 90%;
+            background-color: $pale;
+            top: -30px;
+            left: -20px;
+        }
+
+        @include lg {
+            display: none;
+        }
+
+    }
+
+    #mmLeft {
+        display: none;
+
+        @include md {
+            display: inline;
+            position: absolute;
+            height: 45%;
+            width: 20px;
+            background-color: $pale;
+            top: -30px;
+            left: -20px;
+        }
+
+        @include lg {
+            display: none;
+        }
+    }
+
+    #mBottom {
+        display: none;
+
+        @include lg {
+            display: inline;
+            position: absolute;
+            height: 20px;
+            width: 90%;
+            background-color: $pale;
+            bottom: -20px;
+            left: 0;
+        }
+
+
+    }
+
+    #mLeft {
+        display: none;
+
+        @include lg {
+            display: inline;
+            position: absolute;
+            height: 90%;
+            width: 20px;
+            background-color: $pale;
+            bottom: -20px;
+            left: -20px;
+        }
+
+    }
+
+    #mBottom2 {
+        display: none;
+
+        @include lg {
+            display: inline;
+            position: absolute;
+            height: 20px;
+            width: 45%;
+            background-color: $pale;
+            bottom: -20px;
+            left: 0;
+        }
+
+        @include xl {
+            width: 40%;
+        }
+
+
+    }
+
+    #mLeft2 {
+        display: none;
+
+        @include lg {
+            display: inline;
+            position: absolute;
+            height: 90%;
+            width: 20px;
+            background-color: $pale;
+            bottom: -20px;
+            left: -20px;
+        }
+
+    }
+
+    #mTop2 {
+        display: none;
+
+        @include lg {
+            display: inline;
+            position: absolute;
+            height: 20px;
+            width: 55%;
+            background-color: $pale;
+            top: -20px;
+            right: 0;
+        }
+
+        @include xl {
+            width: 40%;
+        }
+
+
+    }
+
+    #mRight2 {
+        display: none;
+
+        @include lg {
+            display: inline;
+            position: absolute;
+            height: 90%;
+            width: 20px;
+            background-color: $pale;
+            top: -20px;
+            right: -20px;
+        }
+
     }
 }
 
-#mBottom{
-    display: none;
-    
-    @include lg{
-        display: inline;
-        position: absolute;
-        height: 20px;
-        width: 90%;
-        background-color: $pale;
-        bottom:-20px;
-        left:0;
-    }
-    
-    
-}
-
-#mLeft {
-    display: none;
-
-    @include lg{
-        display: inline;
-        position: absolute;
-        height: 90%;
-        width: 20px;
-        background-color: $pale;
-        bottom: -20px;
-        left:-20px;
-    }
-
-}
-
-#mBottom2{
-    display: none;
-    
-    @include lg{
-        display: inline;
-        position: absolute;
-        height: 20px;
-        width: 45%;
-        background-color: $pale;
-        bottom:-20px;
-        left:0;
-    }
-
-    @include xl{
-        width: 40%;
-    }
-    
-    
-}
-
-#mLeft2 {
-    display: none;
-
-    @include lg{
-        display: inline;
-        position: absolute;
-        height: 90%;
-        width: 20px;
-        background-color: $pale;
-        bottom: -20px;
-        left:-20px;
-    }
-
-}
-
-#mTop2{
-    display: none;
-    
-    @include lg{
-        display: inline;
-        position: absolute;
-        height: 20px;
-        width: 55%;
-        background-color: $pale;
-        top:-20px;
-        right:0;
-    }
-
-    @include xl{
-        width: 40%;
-    }
-    
-    
-}
-
-#mRight2{
-    display: none;
-
-    @include lg{
-        display: inline;
-        position: absolute;
-        height: 90%;
-        width: 20px;
-        background-color: $pale;
-        top: -20px;
-        right:-20px;
-    }
-
-}
-}
-
-#autumn{
+#autumn {
 
     position: relative;
 
->div{
-    position: relative;
-}
-    grid-area: autumn;
- 
-}
-
-#winter{
-    position: relative;
-    >div{
+    >div {
         position: relative;
     }
+
+    grid-area: autumn;
+
+}
+
+#winter {
+    position: relative;
+
+    >div {
+        position: relative;
+    }
+
     grid-area: winter;
-    @include lg{
+
+    @include lg {
         flex-direction: row-reverse;
     }
 }
 
-#spring{
+#spring {
     position: relative;
-    >div{
+
+    >div {
         position: relative;
     }
+
     grid-area: spring;
 }
 
-#summer{
+#summer {
     position: relative;
-    >div{
+
+    >div {
         position: relative;
     }
+
     grid-area:summer;
-    @include lg{
+
+    @include lg {
         flex-direction: row-reverse;
     }
 }
-

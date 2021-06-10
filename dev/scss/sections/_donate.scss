@@ -1,11 +1,11 @@
-#donate{
+#donate {
 
-   display: none;
-    
+    display: none;
 
-    @include md{
+
+    @include md {
         padding: 10px;
-   
+
         // display: flex;
         justify-content: center;
         font-size: rem-calc(30);
@@ -15,12 +15,12 @@
         margin-bottom: 120px;
     }
 
-    @include lg{
+    @include lg {
         margin-top: 225px;
         margin-bottom: 245px;
     }
 
-    @include xl{
+    @include xl {
         margin-top: 285px;
         margin-bottom: 275px;
 
@@ -28,86 +28,86 @@
 
 
 
-    button{
+    button {
         padding: 40px;
         background-color: $turk;
-        
-        @include lg{
+
+        @include lg {
             padding: 50px 70px;
         }
 
-        @include xl{
+        @include xl {
             padding: 70px 90px;
         }
     }
 
-    #dTop{
+    #dTop {
         display: none;
-        
-        @include md{
+
+        @include md {
             display: inline;
             position: absolute;
             height: 20px;
             width: 90%;
             background-color: $pale;
-            top:-20px;
-            left:0;
+            top: -20px;
+            left: 0;
         }
-        
-        @include lg{
+
+        @include lg {
             display: none;
         }
     }
-    
-    #dLeft{
+
+    #dLeft {
         display: none;
-    
-        @include md{
+
+        @include md {
             display: inline;
             position: absolute;
             height: 90%;
             width: 20px;
             background-color: $pale;
             top: -20px;
-            left:-20px;
+            left: -20px;
         }
-    
-            @include lg{
-                display: none;
-            }
+
+        @include lg {
+            display: none;
+        }
     }
 
     #dRight {
         display: none;
-    
-        @include lg{
+
+        @include lg {
             display: inline;
             position: absolute;
             height: 90%;
             width: 20px;
             background-color: $pale;
             top: -20px;
-            right:-20px;
+            right: -20px;
         }
 
     }
 
-    #dTop2{
+    #dTop2 {
         display: none;
-        
-        @include lg{
+
+        @include lg {
             display: inline;
             position: absolute;
             height: 20px;
             width: 90%;
             background-color: $pale;
-            top:-20px;
-            right:0;
+            top: -20px;
+            right: 0;
         }
-        
+
     }
 
-    #now{
+    #now {
         position: relative;
     }
 }

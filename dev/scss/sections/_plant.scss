@@ -1,4 +1,4 @@
-#plant{
+#plant {
     position: relative;
     background-image: url("../img/plants.jpg");
     background-size: cover;
@@ -7,7 +7,7 @@
 
     // margin-bottom: 150px;
 
-    @include md{
+    @include md {
         height: 390px;
         margin-left: 70px;
         margin-right: 255px;
@@ -15,7 +15,7 @@
     }
 
 
-    @include lg{
+    @include lg {
         height: 700px;
         margin-left: 217px;
         margin-right: 335px;
@@ -23,7 +23,7 @@
     }
 
 
-    @include xl{
+    @include xl {
         height: 830px;
         margin-left: 325px;
         margin-right: 560px;
@@ -32,136 +32,135 @@
 
 
 
-  
 
-   
 
-    #pTop{
+
+
+    #pTop {
         display: none;
-        
-        @include md{
+
+        @include md {
             display: inline;
             position: absolute;
             height: 20px;
             width: 90%;
             background-color: $pale;
-            top:-20px;
-            right:0;
+            top: -20px;
+            right: 0;
         }
 
-        @include lg{
+        @include lg {
             display: none;
         }
-        
+
     }
-    
+
     #pRight {
         display: none;
-    
-        @include md{
+
+        @include md {
             display: inline;
             position: absolute;
             height: 90%;
             width: 20px;
             background-color: $pale;
             top: -20px;
-            right:-20px;
+            right: -20px;
         }
 
-        @include lg{
+        @include lg {
             display: none;
         }
     }
 
-    #pTop2{
+    #pTop2 {
         display: none;
-        
-        @include lg{
+
+        @include lg {
             display: inline;
             position: absolute;
             height: 20px;
             width: 90%;
             background-color: $pale;
-            top:-20px;
-            left:0;
+            top: -20px;
+            left: 0;
         }
-        
+
     }
-    
-    #pLeft{
+
+    #pLeft {
         display: none;
-    
-        @include lg{
+
+        @include lg {
             display: inline;
             position: absolute;
             height: 90%;
             width: 20px;
             background-color: $pale;
             top: -20px;
-            left:-20px;
+            left: -20px;
         }
     }
 
 
-    
-   
+
+
 
 }
 
-#mainbutton{
+#mainbutton {
     display: none;
-    
-      button{
-          // margin-top: 400px;
-       
-      }
-  
-      @include md{
-          display: flex;
-     
-      }
 
-      margin-bottom: 120px;
-      margin-left: 70px;
-  
-      @include lg{
+    // button {
+    //     // margin-top: 400px;
+
+    // }
+
+    @include md {
+        display: flex;
+
+    }
+
+    margin-bottom: 120px;
+    margin-left: 70px;
+
+    @include lg {
         margin-bottom: 225px;
         margin-left: 217px;
-      }
+    }
 
-      @include xl{
+    @include xl {
         margin-left: 325px;
         margin-bottom: 275px;
-      }
-  }
+    }
+}
 
-  #mobilebutton{
+#mobilebutton {
     margin-top: 10px;
 
-margin-bottom: 150px;
+    margin-bottom: 150px;
 
-//  margin-left: 200px;
-display: flex;
-justify-content: center;
+    //  margin-left: 200px;
+    display: flex;
+    justify-content: center;
 
-        @include md{
-            display: none;
-        }
+    @include md {
+        display: none;
+    }
 
 }
 
-#mobiletitle{
-    h2{
+#mobiletitle {
+    h2 {
         // display: flex;
         // justify-content: center;
         text-align: center;
         color: $lightnavy;
         margin-bottom: 10px;
-      
-        @include md{
+
+        @include md {
             display: none;
-           
+
         }
     }
 }
-

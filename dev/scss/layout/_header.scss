@@ -14,132 +14,137 @@ header {
         // grid-template-columns: 100px auto 100px;
 
 
-    
-input{
-    display: none;
-            @include md{
-            display: flex;
-             margin-top: 35px;
-             height: 35px;
-             margin-left: auto;
-             margin-right: 15px;
-             
+
+        input {
+            display: none;
+
+            @include md {
+                display: flex;
+                margin-top: 35px;
+                height: 35px;
+                margin-left: auto;
+                margin-right: 15px;
+
             }
 
-           
+
+        }
+
+        //   align-content: space-between;
+
+
+    }
+
+
+    img {
+        padding-bottom: 20px;
+        width: 90%;
+        padding-left: 30px;
+
+        @include md {
+            padding-left: 10px;
+            width: auto;
+            height: 100px;
+        }
+
+    }
 }
 
-             //   align-content: space-between;
-         
-     
-        }
-        
+#row2 {
 
-        img {
-            padding-bottom: 20px;
-            width: 90%;
-            padding-left: 30px;
+    display: flex;
 
-            @include md{
-                padding-left: 10px;
-                width: auto;
-                height: 100px;
+    section {
+        margin-left: auto;
+
+        #burger {
+            // margin-left: 500%;
+            padding-right: 10px;
+            justify-content: flex-end;
+            font-size: rem-calc(50);
+
+            @include md {
+                display: none;
             }
 
         }
     }
 
-    #row2{
-          
-        display: flex;
-        
-        section{
-            margin-left: auto;
-            #burger{
-                // margin-left: 500%;
-                padding-right: 10px;
-                justify-content: flex-end;
-                font-size: rem-calc(50);
-    
-                @include md{
-                    display: none;
-                 }
-          
-            }
-        }
 
+    input {
+        margin-left: 10px;
 
-        input{
-            margin-left: 10px;
-            @include md{
-                display: none;
-             }
+        @include md {
+            display: none;
         }
-    
+    }
+
 }
 
 
 
 
 
-    #headlinks {
-        padding-bottom: 10px;
-        padding-right: 20px;
-        padding-left: 20px;
-        background-color: $ligher;
-
-        
-        //  >div{
+#headlinks {
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: $ligher;
 
 
-        ul {
-            display: none;
-            font-size: rem-calc(20);
-        @include md{
+    //  >div{
+
+
+    ul {
+        display: none;
+        font-size: rem-calc(20);
+
+        @include md {
             display: flex;
             justify-content: space-between;
         }
-        @include lg{
+
+        @include lg {
             padding-right: 40px;
             padding-left: 40px;
         }
 
-        @include xl{
+        @include xl {
             padding-right: 50px;
             padding-left: 50px;
         }
 
-            li {}
-        }
-
-        // a{
-        //     justify-content: space-around;
-
-        // }
-
-
-
-        // justify-content: space-around;
-
-        //  } 
-
-
-
+       
     }
 
-    #dropdownmenu{
-        padding-right: 10px;
-        // padding-bottom: 20px;
-        margin-top: 20px;
-            background-color: $pale;
-        text-align: right;
+    // a{
+    //     justify-content: space-around;
 
-        li{
-            margin-top: 10px;
-            font-size: rem-calc(20);
-        }
+    // }
 
-        @include md{
-            display: none;
-        }
+
+
+    // justify-content: space-around;
+
+    //  } 
+
+
+
+}
+
+#dropdownmenu{
+    padding-right: 10px;
+    // padding-bottom: 20px;
+    margin-top: 20px;
+    background-color: $pale;
+    text-align: right;
+
+    li {
+        margin-top: 10px;
+        font-size: rem-calc(20);
     }
+
+    @include md {
+        display: none;
+    }
+}
