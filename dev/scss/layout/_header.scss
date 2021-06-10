@@ -132,12 +132,13 @@ header {
 
 }
 
-#dropdownmenu{
+ul{
     padding-right: 10px;
     // padding-bottom: 20px;
     margin-top: 20px;
     background-color: $pale;
     text-align: right;
+   display: hidden;
 
     li {
         margin-top: 10px;
