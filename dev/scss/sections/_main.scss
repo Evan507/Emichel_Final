@@ -82,7 +82,7 @@
     margin-bottom: 15px;
 
     article{
-        margin-bottom: 15px;
+        margin-bottom: 100px;
         gap: 15px;
         width: 575px;
         margin-left: auto;
@@ -90,9 +90,13 @@
 
         @include md{
             width: auto;
+            margin-right: 200px;
+            margin-left: 55px;
         }
 
         @include lg{
+            margin-left: auto;
+            margin-right: auto;
             margin-bottom: 140px;
         }
         >div{
@@ -145,6 +149,78 @@
 
 }
 
+#mmTop{
+    display: none;
+    
+    @include md{
+        display: inline;
+        position: absolute;
+        height: 20px;
+        width: 90%;
+        background-color: $pale;
+        top:-30px;
+        right: -19px;
+    }
+    @include lg{
+        display: none;
+    }
+    
+}
+
+#mmRight {
+    display: none;
+
+    @include md{
+        display: inline;
+        position: absolute;
+        height: 45%;
+        width: 20px;
+        background-color: $pale;
+        top: -30px;
+        right: -19px;
+    }
+
+    @include lg{
+        display: none;
+    }
+}
+
+#mmTop2{
+    display: none;
+    
+    @include md{
+        display: inline;
+        position: absolute;
+        height: 20px;
+        width: 90%;
+        background-color: $pale;
+        top:-30px;
+        left: -20px;
+    }
+    @include lg{
+        display: none;
+    }
+    
+}
+
+#mmLeft {
+    display: none;
+
+    @include md{
+        display: inline;
+        position: absolute;
+        height: 45%;
+        width: 20px;
+        background-color: $pale;
+        top: -30px;
+        left: -20px;
+    }
+
+    @include lg{
+        display: none;
+    }
+}
+
 #mBottom{
     display: none;
     
@@ -175,9 +251,82 @@
     }
 
 }
+
+#mBottom2{
+    display: none;
+    
+    @include lg{
+        display: inline;
+        position: absolute;
+        height: 20px;
+        width: 45%;
+        background-color: $pale;
+        bottom:-20px;
+        left:0;
+    }
+
+    @include xl{
+        width: 40%;
+    }
+    
+    
+}
+
+#mLeft2 {
+    display: none;
+
+    @include lg{
+        display: inline;
+        position: absolute;
+        height: 90%;
+        width: 20px;
+        background-color: $pale;
+        bottom: -20px;
+        left:-20px;
+    }
+
+}
+
+#mTop2{
+    display: none;
+    
+    @include lg{
+        display: inline;
+        position: absolute;
+        height: 20px;
+        width: 55%;
+        background-color: $pale;
+        top:-20px;
+        right:0;
+    }
+
+    @include xl{
+        width: 40%;
+    }
+    
+    
+}
+
+#mRight2{
+    display: none;
+
+    @include lg{
+        display: inline;
+        position: absolute;
+        height: 90%;
+        width: 20px;
+        background-color: $pale;
+        top: -20px;
+        right:-20px;
+    }
+
+}
 }
 
 #autumn{
+
+    position: relative;
+
 >div{
     position: relative;
 }
@@ -186,6 +335,7 @@
 }
 
 #winter{
+    position: relative;
     >div{
         position: relative;
     }
@@ -196,6 +346,7 @@
 }
 
 #spring{
+    position: relative;
     >div{
         position: relative;
     }
@@ -203,6 +354,7 @@
 }
 
 #summer{
+    position: relative;
     >div{
         position: relative;
     }
